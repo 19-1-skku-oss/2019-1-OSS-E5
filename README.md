@@ -1,5 +1,5 @@
 # 2019-1-OSS-E5
-!(https://www.skku.edu/_res/skku/img/sub/symbol2_img60.png)
+![](https://www.skku.edu/_res/skku/img/sub/symbol2_img60.png)
 ## About our Team
 Last updated: 2019-05-07
 
