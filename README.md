@@ -13,5 +13,6 @@ Last updated: 2019-05-07
 All Algorithms implemented in python
 
 These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
-<https://github.com/19-1-skku-oss/Python>
+<br>
+Original URL: <https://github.com/19-1-skku-oss/Python>
 
