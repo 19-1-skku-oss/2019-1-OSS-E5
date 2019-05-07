@@ -1,6 +1,6 @@
 # 2019-1-OSS-E5
 ## About our Team
-2019-05-07
+Last updated: 2019-05-07
 
 ## Members
 **성균관대학교 소프트웨어학과**
