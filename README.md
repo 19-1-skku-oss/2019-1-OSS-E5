@@ -16,3 +16,4 @@ These implementations are for demonstration purposes. They are less efficient th
 <br>
 Original URL: <https://github.com/19-1-skku-oss/Python>
 
+![Python] (https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjj_PG9loniAhWJwJQKHdU0Cm4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.kisspng.com%2Fpng-programming-python-logo-programming-language-compu-6805560%2F&psig=AOvVaw2s60DXhYXAeVSi6mTttOuF&ust=1557310131481920)
