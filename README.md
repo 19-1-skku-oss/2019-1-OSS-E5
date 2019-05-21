@@ -13,8 +13,11 @@ Last updated: 2019-05-07
 ## About Project
 All Algorithms implemented in python
 
+
 These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
 
+
 Original URL: <https://github.com/19-1-skku-oss/Python>
+
 
 ![python](https://www.python.org/static/opengraph-icon-200x200.png)//
