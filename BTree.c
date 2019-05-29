@@ -17,6 +17,25 @@ void BTreeInit(int _degree)
 	degree = _degree - 1;
 }
 
+BTreeNode* createNode(bool _leaf)
+{
+	BTreeNode* newNode = (BTreeNode*)malloc(sizeof(BTreeNode));
+	int i;
+
+	newNode->leaf = _leaf;
+
+	newNode->keys = (int*)malloc(sizeof(int)*(degree+1));
+	newNode->C = (BTreeNode**)malloc(sizeof(BTreeNode*)*(degree+2));
+	
+	for(i=0; i<degree+2; i++)
+		newNode->C[i] = NULL;
+	
+	newNode->n = 0;
+	newNode->P = NULL;
+	
+	return newNode;
+}
+
 int main()
 {
 	BTreeNode temp;
