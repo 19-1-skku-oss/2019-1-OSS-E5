@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+
+int degree;
 typedef struct BTreeNode
 {
 	int *keys; // An array of keys
@@ -8,6 +10,12 @@ typedef struct BTreeNode
 	int n; // Current number of Keys
 	bool leaf; // Is true when node is leaf
 } BTreeNode;
+
+void BTreeInit(int _degree)
+{
+	root = NULL;
+	degree = _degree - 1;
+}
 
 int main()
 {
