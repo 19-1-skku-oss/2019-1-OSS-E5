@@ -36,6 +36,25 @@ BTreeNode* createNode(bool _leaf)
 	return newNode;
 }
 
+void traverse(BTreeNode* present)
+{
+	if (root != NULL)
+	{
+		int i;
+		for(i=0; i<present->n; i++)
+		{
+			if (present->leaf == false)
+				traverse(present->C[i]);
+			printf(" ");
+			printf("%d", present->keys[i]);
+		}
+		
+		if (present->leaf == false)
+			traverse(present-C[i]);
+	}
+}
+
+}
 int main()
 {
 	BTreeNode temp;
