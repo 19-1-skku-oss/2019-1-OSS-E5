@@ -74,6 +74,25 @@ BTreeNode* _search(BTreeNode* present, int k)
 	return _search(present->C[i], k);
 }
 
+void insertElement(int k)
+{
+	if (search(k) != NULL)
+	{
+		printf("The tree already has %d \n", k);
+		return;
+	}
+
+	if (root == NULL)
+	{
+		root = createNode(true);
+		root->P = NULL;
+		root->keys[0] = k;
+		root->n = 1;
+	}
+	else
+		_insert(root, k);
+}
+
 int main()
 {
 	BTreeNode temp;
