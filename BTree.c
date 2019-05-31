@@ -93,6 +93,26 @@ void insertElement(int k)
 		_insert(root, k);
 }
 
+void _balancing(BTreeNode* present)
+{
+	BTreeNode* parent;
+	
+	if (present->n <= t)
+		return;
+
+	else if (present->P == NULL)
+	{
+		root = _splitChild (present);
+		return;
+	}
+	
+	else
+	{
+		parent = _splitChild(present);
+		_balancing(parent);
+	}
+}
+
 int main()
 {
 	BTreeNode temp;
