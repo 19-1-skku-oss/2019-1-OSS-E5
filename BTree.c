@@ -54,7 +54,26 @@ void traverse(BTreeNode* present)
 	}
 }
 
+BTreeNode* search(int k)
+{
+	return (root==NULL)?NULL:_search(root, k);
 }
+
+BTreeNode* _search(BTreeNode* present, int k)
+{
+	int i=0;
+	while(i<present->n && k > present->keys[i])
+		i++;
+
+	if(present->keys[i] == k)
+		return present;
+
+	if(present->leaf == true)
+		return NULL;
+
+	return _search(present->C[i], k);
+}
+
 int main()
 {
 	BTreeNode temp;
