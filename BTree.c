@@ -93,6 +93,32 @@ void insertElement(int k)
 		_insert(root, k);
 }
 
+void _insert(BTreeNode *present, int k)
+{
+	int i=present->n;
+	
+	if(present->leaf == true)
+	{
+		while(i>0 && (present->keys[i-1]) > k)
+		{
+			present->keys[i] = present->keys[i-1];
+			i--;
+		}
+		present->keys[i] = k;
+		(present->n)++;
+		_balancing(present);
+	}
+	else
+	{
+		while(i>0 && (present->keys[i-1] > k))
+		{
+			i--;
+		}
+		
+		_insert(present->C[i], k);
+	}
+}
+
 void _balancing(BTreeNode* present)
 {
 	BTreeNode* parent;
