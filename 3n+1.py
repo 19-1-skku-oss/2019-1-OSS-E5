@@ -1,5 +1,4 @@
-def main():
-    def n31(a):# a = initial number
+def n31(a):# a = initial number
         c = 0
         l = [a]
         while a != 1:
@@ -11,6 +10,9 @@ def main():
             l += [a]
 
         return l , c
+
+def main():
+
     print(n31(43))
     print(n31(98)[0][-1])# = a
     print("It took {0} steps.".format(n31(13)[1]))#optional finish
