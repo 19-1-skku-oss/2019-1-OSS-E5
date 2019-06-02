@@ -170,14 +170,44 @@ BTreeNode* _splitChild(BTreeNode* present)
 		currentParent->C[parentIndex + 1] = right;
 		right->P = currentParent;
 	}
+	
+	for(i=splitIndex + 1; i<present->n + 1; i++)
+	{
+		right->C[i - spliIndex - 1] = present->C[i];
+		if (present->C[i] != NULL)
+		{
+			right->leaf = false;
+			
+			if(present->C[i] != NULL)
+			{
+				present->C[i]->P = right;
+			}
+			present->C[i] = NULL;
+		}
+	}
+
+	for(i=splitIndex + 1; i < present->n; i++)
+		right->keys[i - splitIndex - 1] = present->keys[i];
+	
+	left = present;
+	left->n = splitIndex;
 
 	if (present->P != NULL)
 		return present->P;
 	else
 	{
+		root = _createNode(present->leaf);
+		root->keys[0] = risingKey;
+		root->n = 1;
+		root->C[0] = left;
+		root->C[1] = right;
+		left->P = root;
+		right->P = root;
+		root->leaf = false;
 		return root;
 	}
 }
+
 int main()
 {
 	BTreeNode temp;
