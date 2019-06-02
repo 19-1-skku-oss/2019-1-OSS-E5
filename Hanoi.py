@@ -7,22 +7,12 @@ log = logging.getLogger()
 logging.basicConfig(level=logging.DEBUG)
 
 
-def Tower_Of_Hanoi(n, source, dest, by, mouvement):
-    if n == 0:
-        return n
-    elif n == 1:
-        mouvement += 1
-        # no print statement (you could make it an optional flag for printing logs)
-        logging.debug('Move the plate from', source, 'to', dest)
-        return mouvement
-    else:
-
-        mouvement = mouvement + Tower_Of_Hanoi(n-1, source, by, dest, 0)
-        logging.debug('Move the plate from', source, 'to', dest)
-
-        mouvement = mouvement + 1 + Tower_Of_Hanoi(n-1, by, dest, source, 0)
-	return mouvement
-
+def Tower_Of_Hanoi(n, source, dest, by, movement):
+    if n >= 1:
+	Tower_Of_Hanoi(n-1, source, movement, by)
+	moveDisk(source, by)
+	Tower_Of_Hanoi(n-1, movement, by, source)
+## recursive fun
 
 def moveDisk(fp, tp):   ## the function that print the moving situation of the tower.
 	print(('Moving disk from', fp, 'to', tp))
@@ -32,7 +22,7 @@ def main():
 	height = int(input('Height of hanoi: '))
 	## user input the number of height of hanoi tower.
 
-	moveTower(height, 'A', 'B', 'C')
+	Tower_Of_Hanoi(height, 'A', 'B', 'C')
 
 
 if __name__ == '__main__':
