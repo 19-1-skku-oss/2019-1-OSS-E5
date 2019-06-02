@@ -1,7 +1,7 @@
-# @author willx75
-# Tower of Hanoi recursion game algorithm is a game, it consists of three rods and a number of disks of different sizes, which can slide onto any rod
+#recursion function of honoi tower problem
 
-import logging
+from __future__ import print_function
+
 
 log = logging.getLogger()
 logging.basicConfig(level=logging.DEBUG)
@@ -22,3 +22,18 @@ def Tower_Of_Hanoi(n, source, dest, by, mouvement):
 
         mouvement = mouvement + 1 + Tower_Of_Hanoi(n-1, by, dest, source, 0)
 	return mouvement
+
+
+def moveDisk(fp, tp):   ## the function that print the moving situation of the tower.
+	print(('Moving disk from', fp, 'to', tp))
+
+
+def main():
+	height = int(input('Height of hanoi: '))
+	## user input the number of height of hanoi tower.
+
+	moveTower(height, 'A', 'B', 'C')
+
+
+if __name__ == '__main__':
+	main()
