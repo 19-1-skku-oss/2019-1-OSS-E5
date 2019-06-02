@@ -139,6 +139,33 @@ void _balancing(BTreeNode* present)
 	}
 }
 
+BTreeNode* _splitChild(BTreeNode* present)
+{
+	int i;
+	int splitIndex;
+	int risingKey;
+	int parentIndex;
+	
+	BTreeNode* currentParent;
+	BTreeNode* left;
+	BTreeNode* right = _createNode(present->leaf);
+	
+	splitIndex = t/2;
+
+	right->n = present->n - splitIndex - 1;
+	risingKey = present->keys[splitIndex];
+
+	if(present->P != NULL)
+	{
+	}
+
+	if (present->P != NULL)
+		return present->P;
+	else
+	{
+		return root;
+	}
+}
 int main()
 {
 	BTreeNode temp;
