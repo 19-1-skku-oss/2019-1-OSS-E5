@@ -157,6 +157,18 @@ BTreeNode* _splitChild(BTreeNode* present)
 
 	if(present->P != NULL)
 	{
+		currentParent = present->P;
+		for(parentIndex = 0; parentIndex < currentParent->n + 1 && currentParent->C[parentIndex] != present; parentIndex++);
+		for(i=currentParent->n; i > parentIndex; i--)
+		{
+			currentParent->C[i+1] = currentParent->C[i];
+			currentParent->keys[i] = currentParent->keys[i-1];
+		}
+		currentParent->n = currentParent->n + 1;
+		currentParent->keys[parentIndex] = risingKey;
+		
+		currentParent->C[parentIndex + 1] = right;
+		right->P = currentParent;
 	}
 
 	if (present->P != NULL)
