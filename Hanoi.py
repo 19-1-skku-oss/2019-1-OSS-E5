@@ -21,4 +21,5 @@ def Tower_Of_Hanoi(n, source, dest, by, mouvement):
         logging.debug('Move the plate from', source, 'to', dest)
 
         mouvement = mouvement + 1 + Tower_Of_Hanoi(n-1, by, dest, source, 0)
+
 	return mouvement
