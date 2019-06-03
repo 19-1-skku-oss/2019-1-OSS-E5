@@ -29,3 +29,7 @@ Original URL: <https://github.com/19-1-skku-oss/Python>
 - What is BTree?
 
 - Snapshot of BTree
+
+**Implementation of Priority Queue**
+- Worker: 임성근(Sunggeun Lim, <nicholas15@skku.edu>)
+- What is Priority Queue?
