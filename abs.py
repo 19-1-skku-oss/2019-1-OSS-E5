@@ -6,10 +6,10 @@ def absVal(num):
     >>absVal(0)
     0
     """
-    if num < 0:
+    if num < 0:     ## if num is negative elements, change to positive value.
         return -num
-    else:
-        return num
+    else:  	    ## we don't need any other things if num is positive value
+        return num  ## because if the elements is positive, abs and origin value is same.
 
 def main():
     print(absVal(-34)) # = 34
