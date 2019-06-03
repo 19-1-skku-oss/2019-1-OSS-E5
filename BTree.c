@@ -208,6 +208,33 @@ BTreeNode* _splitChild(BTreeNode* present)
 	}
 }
 
+
+void removeElement(int k)
+{
+	if(!root)
+	{
+		printf("The tree is empty\n");
+		return;
+	}
+
+	_remove(root, k);
+
+	if (root->n == 0)
+	{
+		BTreeNode *tmp = root;
+		if(root->leaf)
+			root = NULL;
+		else
+		{
+			root = root->C[0];
+			root->P = NULL;
+		}
+		free(tmp);
+	}
+	return;
+}
+
+
 int main()
 {
 	BTreeNode temp;
