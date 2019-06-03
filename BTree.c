@@ -293,6 +293,22 @@ void _balancingAfterDel(BTreeNode* present)
 		}
 		else
 		{
+			parent = present->P;
+			for(parentIndex=0; parent->C[parentIndex]!=present; parentIndex++);
+			if(parentIndex>0 && parent->C[parentIndex-1]->n>minKeys)
+				_borrowFromLeft(present, parentIndex);
+			else if(parentIndex<parent->n && parent->C[parentIndex+1]->n > minKeys)
+				_borrowFromRight(present, parentIndex);
+			else if(parentIndex == 0)
+			{
+				next = _merge(present);
+				_balancingAfterDel(next->P);
+			}
+			else
+			{
+				next = _merge(parent->C[parentIndex-1]);
+				_balancingAfterDel(next->P);
+			}
 		}
 	}
 }
