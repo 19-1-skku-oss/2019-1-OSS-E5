@@ -235,6 +235,44 @@ void removeElement(int k)
 }
 
 
+void _remove(BTreeNode* present, int k)
+{
+	BTreeNode* del_node = search(k)
+	if(del_node == NULL)
+	{
+		printf("%d is not exist\n", k);
+		return;
+	}
+
+	int child_num = del_node->n;
+	int i = del_node->n;
+	i--;
+	int temp = del_node->keys[i];
+	if(del_node->leaf)
+	{
+		while(i>0 && temp != k)
+		{
+			del_node->keys[i-1] = temp;
+			temp = del_node->keys[i-1];
+			i--;
+		}
+		(del_node->n)--;
+		_balancingAfterDel(del_node);
+	}
+	
+
+	else
+	{
+		while(i>0 && temp!=k)
+			i--;
+		del_node->keys[i] = del_node->C[i]->keys[del_node->C[i]->n-1];
+		(del_node->C[i]->n)--;
+		_balancingAfterDel(del_node->C[i]);
+	}
+	
+	return;
+}
+
 int main()
 {
 	BTreeNode temp;
