@@ -170,14 +170,109 @@ BTreeNode* _splitChild(BTreeNode* present)
 		currentParent->C[parentIndex + 1] = right;
 		right->P = currentParent;
 	}
+	
+	for(i=splitIndex + 1; i<present->n + 1; i++)
+	{
+		right->C[i - spliIndex - 1] = present->C[i];
+		if (present->C[i] != NULL)
+		{
+			right->leaf = false;
+			
+			if(present->C[i] != NULL)
+			{
+				present->C[i]->P = right;
+			}
+			present->C[i] = NULL;
+		}
+	}
+
+	for(i=splitIndex + 1; i < present->n; i++)
+		right->keys[i - splitIndex - 1] = present->keys[i];
+	
+	left = present;
+	left->n = splitIndex;
 
 	if (present->P != NULL)
 		return present->P;
 	else
 	{
+		root = _createNode(present->leaf);
+		root->keys[0] = risingKey;
+		root->n = 1;
+		root->C[0] = left;
+		root->C[1] = right;
+		left->P = root;
+		right->P = root;
+		root->leaf = false;
 		return root;
 	}
 }
+
+
+void removeElement(int k)
+{
+	if(!root)
+	{
+		printf("The tree is empty\n");
+		return;
+	}
+
+	_remove(root, k);
+
+	if (root->n == 0)
+	{
+		BTreeNode *tmp = root;
+		if(root->leaf)
+			root = NULL;
+		else
+		{
+			root = root->C[0];
+			root->P = NULL;
+		}
+		free(tmp);
+	}
+	return;
+}
+
+
+void _remove(BTreeNode* present, int k)
+{
+	BTreeNode* del_node = search(k)
+	if(del_node == NULL)
+	{
+		printf("%d is not exist\n", k);
+		return;
+	}
+
+	int child_num = del_node->n;
+	int i = del_node->n;
+	i--;
+	int temp = del_node->keys[i];
+	if(del_node->leaf)
+	{
+		while(i>0 && temp != k)
+		{
+			del_node->keys[i-1] = temp;
+			temp = del_node->keys[i-1];
+			i--;
+		}
+		(del_node->n)--;
+		_balancingAfterDel(del_node);
+	}
+	
+
+	else
+	{
+		while(i>0 && temp!=k)
+			i--;
+		del_node->keys[i] = del_node->C[i]->keys[del_node->C[i]->n-1];
+		(del_node->C[i]->n)--;
+		_balancingAfterDel(del_node->C[i]);
+	}
+	
+	return;
+}
+
 int main()
 {
 	BTreeNode temp;
