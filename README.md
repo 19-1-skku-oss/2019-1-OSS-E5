@@ -5,7 +5,7 @@ Last updated: 2019-05-07
 
 ## Members
 **성균관대학교 소프트웨어학과**
-- 문재완: jaewan7599
+- 문재완: jaewan7599 <jaewan7599@skku.edu>
 - 김지영: pltlover
 - 임성근: nicholas369
 - 배상준: jun-honey
