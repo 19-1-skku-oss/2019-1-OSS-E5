@@ -279,6 +279,22 @@ void _balancingAfterDel(BTreeNode* present)
 	BTreeNode* parent;
 	BTreeNode* next;
 	int parentIndex = 0;
+	
+	if(present->n < minKeys)
+	{
+		if(present->P == NULL)
+		{
+			if(present->n == 0)
+			{
+				root = present->C[0];
+				if(root != NULL)
+					root->P = NULL;
+			}
+		}
+		else
+		{
+		}
+	}
 }
 
 int main()
