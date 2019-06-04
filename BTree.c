@@ -339,6 +339,33 @@ void _borrowFromRight(BTreeNode* present, int parentIdx)
 	rightSib->n--;
 }
 
+void _borrowFromLeft(BTreeNode* present, int parentIdx)
+{
+	int i;
+	BTreeNode* leftSib;
+	BTreeNode* parentNode = present->P;
+	present->n = present->n + 1;
+
+	for(i=present->n -1; i>0; i--)
+		present->keys[i] = present->C[i-1];
+	leftSib = parentNode->C[parentIdx-1];
+
+	if(!present->leaf)
+	{
+		for(i=present->n; i>0; i--)
+			present->C[i] = present->C[i-1];
+	
+		present->C[0] = leftSib->C[leftSib->n];
+		leftSib->C[leftSib->n] = NULL;
+		present->C[0]->P = present;
+	}
+
+	present->keys[0] = parentNode->keys[parentIdx - 1];
+	parentNode->keys[parentIdx-1] = leftSib->keys[leftSib->n -1];
+	
+	leftSib->n = leftSib->n - 1;
+}
+
 int main()
 {
 	BTreeNode temp;
