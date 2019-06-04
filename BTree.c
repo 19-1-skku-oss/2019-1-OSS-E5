@@ -273,14 +273,6 @@ void _remove(BTreeNode* present, int k)
 	return;
 }
 
-void _balancingAfterDel(BTreeNode* present)
-{
-	int minKeys = (degree+2)/2 - 1;
-	BTreeNode* parent;
-	BTreeNode* next;
-	int parentIndex = 0;
-}
-
 int main()
 {
 	BTreeNode temp;
