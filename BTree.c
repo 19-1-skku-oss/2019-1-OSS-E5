@@ -323,6 +323,20 @@ void _borrowFromRight(BTreeNode* present, int parentIdx)
 	
 	present->keys[present->n - 1] = parentNode->keys[parentIdx];
 	parentNode->keys[parentIdx] = rightSib->keys[0];
+
+	if(!present->leaf)
+	{
+		present->C[present->n] = rightSib->C[0];
+		presnet->C[present->n]->P = present;
+
+		for(i=1; i<rightSib->n + 1; i++)
+			rightSib->C[i-1] = rightSib->C[i];
+	}
+	
+	for(i=1; i<rightSib->n; i++)
+		rightSib->keys[i-1] = rightSib->keys[i];
+	
+	rightSib->n--;
 }
 
 int main()
