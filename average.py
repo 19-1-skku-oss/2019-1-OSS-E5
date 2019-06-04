@@ -1,14 +1,14 @@
-def average(nums):
+#the algorithms that return the average value of total elements.
+
+def average(array):
     sum = 0
-    n = 0
-    for x in nums:
+    for x in array:
       sum += x
-      n += 1
-    avg = sum / n
-    print(avg)
+    avg = sum / len(array)
+    return avg
 
 def main():
-  average([2, 4, 6, 8, 20, 50, 70])
+  print(average([2, 4, 6, 8, 20, 50, 70]))
 
 if __name__ == '__main__':
 main()
