@@ -312,6 +312,19 @@ void _balancingAfterDel(BTreeNode* present)
 	}
 }
 
+void _borrowFromRight(BTreeNode* present, int parentIdx)
+{
+	int i;
+	BTreeNode* rightSib;
+	BTreeNode* parentNode = present->P;
+
+	rightSib = parentNode->C[parentIdx + 1];
+	present->n++;
+	
+	present->keys[present->n - 1] = parentNode->keys[parentIdx];
+	parentNode->keys[parentIdx] = rightSib->keys[0];
+}
+
 int main()
 {
 	BTreeNode temp;
