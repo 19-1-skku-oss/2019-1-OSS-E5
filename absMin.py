@@ -1,15 +1,13 @@
 from Maths.abs import absVal
 
 #절댓값 값이 가장 작은 것을 고르시오.
+
 def absMin(x):
     """
     # >>>absMin([0,5,1,11])
     0
     # >>absMin([3,-10,-2])
     -2
-    # >>absMin([7,-5,2])
-    -5
-    
     """
     temp = x[0]
     for i in x:
