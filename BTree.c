@@ -434,6 +434,22 @@ void _getNumberOfNodes(BTreeNode* present, int* numNodes, int level)
 	numNodes[level] += 1;
 }
 
+void _mappingNodes(BTreeNode* present, BTreeNode ***nodePtr, int* numNodes, int level)
+{
+	int i;
+	if(present==NULL)
+		return;
+	
+	if(present->leaf == false)
+	{
+		for(i=0; i<present->n+1; i++)
+			_mappingNodes(present->C[i], nodePtr, numNodes, level+1);
+	}
+
+	nodePtr[level][numNodes[level]] = present;
+	numNodes[level] += 1;
+}
+
 int main()
 {
 	BTreeNode temp;
