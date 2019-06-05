@@ -399,6 +399,27 @@ BTreeNode* _merge(BTreeNode* present)
 	return present;
 }
 
+int _getLevel(BTreeNode* present)
+{
+	int i;
+	int maxLevel = 0;
+	int temp;
+	if(present==NULL)
+		return maxLevel;
+	if(present->leaf == ture)
+		return maxLevel++;
+	
+	for(i=0; i<present->n+1; i++)
+	{
+		temp = _getLevel(present->C[i]);
+		
+		if(temp>maxLevel)
+			maxLevel = temp;
+	}
+	
+	return maxLevel + 1;
+}
+
 int main()
 {
 	BTreeNode temp;
