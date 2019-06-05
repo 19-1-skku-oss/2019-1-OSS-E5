@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <limits.h>
 
 int degree;
 typedef struct BTreeNode
@@ -10,6 +11,8 @@ typedef struct BTreeNode
 	int n; // Current number of Keys
 	bool leaf; // Is true when node is leaf
 } BTreeNode;
+
+BTreeNode *root;
 
 void BTreeInit(int _degree)
 {
@@ -150,7 +153,7 @@ BTreeNode* _splitChild(BTreeNode* present)
 	BTreeNode* left;
 	BTreeNode* right = _createNode(present->leaf);
 	
-	splitIndex = t/2;
+	splitIndex = degree/2;
 
 	right->n = present->n - splitIndex - 1;
 	risingKey = present->keys[splitIndex];
@@ -449,6 +452,49 @@ void _mappingNodes(BTreeNode* present, BTreeNode ***nodePtr, int* numNodes, int 
 	nodePtr[level][numNodes[level]] = present;
 	numNodes[level] += 1;
 }
+
+void printTree()
+{
+	int level;
+	int* numNodes;
+	int i,j,k;
+
+	level = _getLevel(root);
+	numNodes = (int*) malloc(sizeof(int)* level);
+	memset(numNodes, 0,0 level*sizeof(int));
+
+	_getNumberOfNodes(root, numNodes, 0);
+	
+	BTreeNode ***nodePtr;
+	nodePtr= (BTreeNode***)malloc(sizeof(BTreeNode**) * level);
+
+	for(i=0; i<level; i++)
+		nodePtr[i] = (BTreeNode**)malloc(sizeof(BTreeNode*) * numNodes[i]);
+
+	memset(numnodes, 0, level*sizeof(int));
+	_mappingNodes(root, nodePtr, numNodes, 0);
+
+	for(i=0; i<level; i++)
+	{
+		for(j=0; j<numNodes[i]; j++)
+		{
+			printf("[");
+
+			for(k=0; k<nodePtr[i][j]->n; k++)
+				printf("%d ", nodePtr[i][j]->keys[k]);
+			printf("]");
+		}
+		printf("\n");
+	}
+	
+
+	for(i=0; i<level; i++)
+	{
+		free(nodePtr[i]);
+	}
+	free(nodePtr);
+}
+
 
 int main()
 {
