@@ -33,3 +33,7 @@ Original URL: <https://github.com/19-1-skku-oss/Python>
 **Implementation of Priority Queue**
 - Worker: 임성근(Sunggeun Lim, <nicholas15@skku.edu>)
 - What is Priority Queue?
+
+**Implementation of Circular list**
+- Worker: 배상준(SangJun Pae, <psj97047@naver.com>)
+- What is Circular list?
