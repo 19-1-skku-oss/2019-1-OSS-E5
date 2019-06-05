@@ -1,3 +1,7 @@
+## implementation modular exponentation
+## Calculating value of base^power % mod
+
+
 def modularExponential(base, power, mod):
 	if power < 0:
 		return -1
@@ -13,7 +17,13 @@ def modularExponential(base, power, mod):
 
 
 def main():
-	print(modularExponential(3, 200, 13))
+	## user input number of base, power, mode. 
+
+	base = int(input("INPUT BASE: "))
+	power = int(input("INPUT POWER: "))
+	mode = int(input("INPUT MOD: "))	
+
+	print(modularExponential(base, power, mod))
 
 
 if __name__ == '__main__':
