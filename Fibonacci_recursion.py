@@ -1,13 +1,16 @@
 # Fibonacci Sequence Using Recursion
 
 def recur_fibo(n):
-    if n <= 1:
+    if n <= 1:   ## 받은 n이 음수이거나, 1일 때 그대로 n을 return
         return n
     else:
-        (recur_fibo(n-1) + recur_fibo(n-2))
+        (recur_fibo(n-1) + recur_fibo(n-2))  ## 피노나치 수열 : n3 = n1 = n2
 
 def isPositiveInteger(limit):
-    return limit >= 0
+    if limit >= 0:
+	return TRUE
+    else:
+	return FALSE
 
 def main():
     limit = int(input("How many terms to include in fibonacci series: "))
@@ -18,4 +21,4 @@ def main():
         print("Please enter a positive integer: ")
 
 if __name__ == '__main__':
-main()
+	main()
