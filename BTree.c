@@ -420,6 +420,20 @@ int _getLevel(BTreeNode* present)
 	return maxLevel + 1;
 }
 
+void _getNumberOfNodes(BTreeNode* present, int* numNodes, int level)
+{
+	int i;
+	if(present==NULL)
+		return;
+	
+	if(present->leaf==false)
+	{
+		for(i=0; i<present->n+1; i++)
+			_getNumberOfNodes(present->C[i], numNodes, level + 1);
+	}
+	numNodes[level] += 1;
+}
+
 int main()
 {
 	BTreeNode temp;
