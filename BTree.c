@@ -450,6 +450,17 @@ void _mappingNodes(BTreeNode* present, BTreeNode ***nodePtr, int* numNodes, int 
 	numNodes[level] += 1;
 }
 
+void printTree()
+{
+	int level;
+	int* numNodes;
+	int i,j,k;
+
+	level = _getLevel(root);
+	numNodes = (int*) malloc(sizeof(int)* level);
+	memset(numNodes, 0,0 level*sizeof(int));
+}
+
 int main()
 {
 	BTreeNode temp;
