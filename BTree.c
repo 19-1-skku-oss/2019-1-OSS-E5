@@ -312,6 +312,76 @@ void _balancingAfterDel(BTreeNode* present)
 	}
 }
 
+void _borrowFromRight(BTreeNode* present, int parentIdx)
+{
+	int i;
+	BTreeNode* rightSib;
+	BTreeNode* parentNode = present->P;
+
+	rightSib = parentNode->C[parentIdx + 1];
+	present->n++;
+	
+	present->keys[present->n - 1] = parentNode->keys[parentIdx];
+	parentNode->keys[parentIdx] = rightSib->keys[0];
+
+	if(!present->leaf)
+	{
+		present->C[present->n] = rightSib->C[0];
+		presnet->C[present->n]->P = present;
+
+		for(i=1; i<rightSib->n + 1; i++)
+			rightSib->C[i-1] = rightSib->C[i];
+	}
+	
+	for(i=1; i<rightSib->n; i++)
+		rightSib->keys[i-1] = rightSib->keys[i];
+	
+	rightSib->n--;
+}
+
+void _borrowFromLeft(BTreeNode* present, int parentIdx)
+{
+	int i;
+	BTreeNode* leftSib;
+	BTreeNode* parentNode = present->P;
+	present->n = present->n + 1;
+
+	for(i=present->n -1; i>0; i--)
+		present->keys[i] = present->C[i-1];
+	leftSib = parentNode->C[parentIdx-1];
+
+	if(!present->leaf)
+	{
+		for(i=present->n; i>0; i--)
+			present->C[i] = present->C[i-1];
+	
+		present->C[0] = leftSib->C[leftSib->n];
+		leftSib->C[leftSib->n] = NULL;
+		present->C[0]->P = present;
+	}
+
+	present->keys[0] = parentNode->keys[parentIdx - 1];
+	parentNode->keys[parentIdx-1] = leftSib->keys[leftSib->n -1];
+	
+	leftSib->n = leftSib->n - 1;
+}
+
+BTreeNode* _merge(BTreeNode* present)
+{
+	BTreeNode* parentNode = present->P;
+	int parentIndex = 0;
+	int fromParentIndex;
+	int i;
+	
+	for(parentIndex = 0; parentNode->C[parentIndex] != present; parentIndex++);
+	BTreeNode* rightSib = parentNode->C[parentIndex+1];
+
+	present->keys[present->n] = parentNode->keys[parentIndex];
+	fromParentIndex = present->n;
+
+	return present;
+}
+
 int main()
 {
 	BTreeNode temp;
