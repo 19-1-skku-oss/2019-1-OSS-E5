@@ -378,7 +378,24 @@ BTreeNode* _merge(BTreeNode* present)
 
 	present->keys[present->n] = parentNode->keys[parentIndex];
 	fromParentIndex = present->n;
+	
+	for(i=0; i<rightSib->n;i++)
+		present->keys[present->n +1 +i] = rightSib->keys[i];
 
+	if(!present->leaf)
+		for(i=0; i<=rightSib->n; i++)
+		{
+			present->C[present->n +1+i] = rightSib->C[i];
+			present->C[present->n +1+i]->P = present;
+		}
+	
+	for(i=parentIndex+1; i<parentNode->n; i++)
+	{
+		parentNode->C[i] = parentNode->C[i+1];
+		parentNode->keys[i-1] = parentNode->keys[i];
+	}
+	parentNode->n--;
+	present->n = present->n + rightSib->n + 1;
 	return present;
 }
 
