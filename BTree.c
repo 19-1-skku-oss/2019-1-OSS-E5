@@ -12,6 +12,8 @@ typedef struct BTreeNode
 	bool leaf; // Is true when node is leaf
 } BTreeNode;
 
+BTreeNode *root;
+
 void BTreeInit(int _degree)
 {
 	root = NULL;
@@ -151,7 +153,7 @@ BTreeNode* _splitChild(BTreeNode* present)
 	BTreeNode* left;
 	BTreeNode* right = _createNode(present->leaf);
 	
-	splitIndex = t/2;
+	splitIndex = degree/2;
 
 	right->n = present->n - splitIndex - 1;
 	risingKey = present->keys[splitIndex];
