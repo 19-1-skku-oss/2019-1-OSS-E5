@@ -366,6 +366,22 @@ void _borrowFromLeft(BTreeNode* present, int parentIdx)
 	leftSib->n = leftSib->n - 1;
 }
 
+BTreeNode* _merge(BTreeNode* present)
+{
+	BTreeNode* parentNode = present->P;
+	int parentIndex = 0;
+	int fromParentIndex;
+	int i;
+	
+	for(parentIndex = 0; parentNode->C[parentIndex] != present; parentIndex++);
+	BTreeNode* rightSib = parentNode->C[parentIndex+1];
+
+	present->keys[present->n] = parentNode->keys[parentIndex];
+	fromParentIndex = present->n;
+
+	return present;
+}
+
 int main()
 {
 	BTreeNode temp;
