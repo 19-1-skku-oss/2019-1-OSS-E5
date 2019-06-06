@@ -32,6 +32,7 @@ def method_2(boundary, steps):
 		y += (h/3)*(4-2*(cnt%2))*f(i)	
 		cnt += 1
 	y += (h/3.0)*f(b)
+
 	return y
 
 def makePoints(a,b,h):
