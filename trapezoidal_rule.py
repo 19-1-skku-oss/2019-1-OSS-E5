@@ -19,9 +19,9 @@ from __future__ import print_function
 def method_1(boundary, steps):
 # "extended trapezoidal rule"
 # int(f) = dx/2 * (f1 + 2f2 + ... + fn)
-	h = (boundary[1] - boundary[0]) / steps
-	a = boundary[0]
-	b = boundary[1]
+	h = (boundary[1] - boundary[0]) / steps  ##한 칸의 간격을 구하는 부분
+	a = boundary[0] ##시작점
+	b = boundary[1]  ## 도착점
 	x_i = makePoints(a,b,h)
 	y = 0.0	
 	y += (h/2.0)*f(a)
@@ -35,7 +35,7 @@ def makePoints(a,b,h):
 	x = a + h	
 	while x < (b-h):
 		yield x
-		x = x + h
+		x = x + h  ##return b - 2*h
 		
 def f(x): #enter your function here
 	y = (x-0)*(x-0)
