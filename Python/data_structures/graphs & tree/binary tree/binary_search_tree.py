@@ -1,5 +1,8 @@
 '''
-A binary search Tree
+A binary search Tree is binary tree that automatically sort the input.
+Sorting rules can be any thing upper or lower.
+(EX. In thi example small order)
+By using this datastructure searching time will be much less than by searching linerly.
 '''
 from __future__ import print_function
 class Node:
@@ -11,6 +14,8 @@ class Node:
         #Added in order to delete a node easier
         self.parent = parent
 
+    # other class method is for tracking node
+        
     def getLabel(self):
         return self.label
 
@@ -37,10 +42,10 @@ class Node:
 
 class BinarySearchTree:
 
-    def __init__(self):
+    def __init__(self): # Initalize tree. Root is for tracking starting node.
         self.root = None
 
-    def insert(self, label):
+    def insert(self, label): 
         # Create a new Node
         new_node = Node(label, None)
         # If Tree is empty
@@ -68,7 +73,7 @@ class BinarySearchTree:
             #Set parent to the new node
             new_node.setParent(parent_node)      
     
-    def delete(self, label):
+    def delete(self, label): # Delete selected label 
         if (not self.empty()):
             #Look for the node with that label
             node = self.getNode(label)
@@ -92,8 +97,11 @@ class BinarySearchTree:
                     self.delete(tmpNode.getLabel())
                     #Assigns the value to the node to delete and keesp tree structure
                     node.setLabel(tmpNode.getLabel())
+                    
+    def deleteTree(self): # Delete total tree
+        self.root= None
     
-    def getNode(self, label):
+    def getNode(self, label): # Search for label
         curr_node = None
         #If the tree is not empty
         if(not self.empty()):
@@ -111,7 +119,7 @@ class BinarySearchTree:
                     curr_node = curr_node.getRight()
         return curr_node
 
-    def getMax(self, root = None):
+    def getMax(self, root = None): # Find max node
         if(root is not None):
             curr_node = root
         else:
@@ -122,7 +130,7 @@ class BinarySearchTree:
                 curr_node = curr_node.getRight()
         return curr_node
 
-    def getMin(self, root = None):
+    def getMin(self, root = None): # Find min node
         if(root is not None):
             curr_node = root
         else:
@@ -134,12 +142,12 @@ class BinarySearchTree:
                 curr_node = curr_node.getLeft()
         return curr_node
 
-    def empty(self):
+    def empty(self): # Check tree this is empty
         if self.root is None:
             return True
         return False
 
-    def __InOrderTraversal(self, curr_node):
+    def __InOrderTraversal(self, curr_node): # Traverse tree (Inorder: There are three ways to traverse 1)
         nodeList = []
         if curr_node is not None:
             nodeList.insert(0, curr_node)
@@ -147,15 +155,31 @@ class BinarySearchTree:
             nodeList = nodeList + self.__InOrderTraversal(curr_node.getRight())
         return nodeList
 
-    def getRoot(self):
+    def PreOrder(curr_node): # Traverse tree (PreOrder: There are three ways to traverse 2)
+        nodeList = []
+        if curr_node is not None:
+            nodeList = nodeList + PreOrder(curr_node.getLeft())
+            nodeList.insert(0, curr_node.getLabel())
+            nodeList = nodeList + PreOrder(curr_node.getRight())
+        return nodeList
+
+    def PostOrder(curr_node): # Traverse tree (PostOrder: There are three ways to traverse 3)
+        nodeList = []
+        if curr_node is not None:
+            nodeList = nodeList + PostOrder(curr_node.getLeft())
+            nodeList = nodeList + PostOrder(curr_node.getRight())
+            nodeList.insert(0, curr_node.getLabel())
+        return nodeList
+
+    def getRoot(self): #Get root for OOP disign
         return self.root
 
-    def __isRightChildren(self, node):
+    def __isRightChildren(self, node): # Tell if node is in rightchild
         if(node == node.getParent().getRight()):
             return True
         return False
 
-    def __reassignNodes(self, node, newChildren):
+    def __reassignNodes(self, node, newChildren): # Reassignnode for edit
         if(newChildren is not None):
             newChildren.setParent(node.getParent())
         if(node.getParent() is not None):
@@ -186,13 +210,6 @@ class BinarySearchTree:
             str = str + " " + x.getLabel().__str__()
         return str
 
-def InPreOrder(curr_node):
-    nodeList = []
-    if curr_node is not None:
-        nodeList = nodeList + InPreOrder(curr_node.getLeft())
-        nodeList.insert(0, curr_node.getLabel())
-        nodeList = nodeList + InPreOrder(curr_node.getRight())
-    return nodeList
 
 def testBinarySearchTree():
     r'''
@@ -250,7 +267,7 @@ def testBinarySearchTree():
 
     #Gets all the elements of the tree In pre order
     #And it prints them
-    list = t.traversalTree(InPreOrder, t.root)
+    list = t.traversalTree(PreOrder, t.root)
     for x in list:
         print(x)
 
