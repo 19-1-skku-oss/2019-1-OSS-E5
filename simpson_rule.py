@@ -8,12 +8,10 @@ method 2:
 
 '''
 What's is the simson rules?
-방정식 P(x) 라는 이차방정식이 있으면, f(x)의 근사값을 구한다.
-여기서 P(x)는 P(x) 위에 있는 임의의 a, b, 그리고 그 둘의 중간값 m = (a+b)/2 을 구하고
-중간값의 f(x)와 같은 값을 갖는 근사식이다. 
+곡선 하부의 면적을 구할 때 쓰임.
+n개의 등간격 종선으로 나누어(n+1개의 종선이 있는 경우) n개의 구간을 2개씩 
+묶은 것을 면적요소로 생각하여 전체는 1/2n개의 면적요소로 보는 것.
 
-P(x) 식을 전개하면서 다음 심프신 공식을 구한다. 
-https://ko.wijipedia.org/wiki/심프신_공식 참고
 
 '''
 from __future__ import print_function
@@ -37,10 +35,11 @@ def method_2(boundary, steps):
 	return y
 
 def makePoints(a,b,h):
-	x = a + h
-	while x < (b-h):
+	x = a + h ##초기값에서 한 간격을 더함.
+	while x < (b-h): ## x가 마지막 점에서 한 간격 전 크기의 값이 될 때까지
 		yield x
-		x = x + h  ##update
+		x = x + h  ## 한 칸씩 늘려준다 -> while문을 빠져나오면 마지막점에서 두 간격 전임 
+	return x
 
 def f(x): #enter your function here
 	y = (x-0)*(x-0)
