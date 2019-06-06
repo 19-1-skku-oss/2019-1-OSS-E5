@@ -3,6 +3,16 @@ Numerical integration or quadrature for a smooth function f with known values at
 This method is the classical approch of suming 'Equally Spaced Abscissas' 
 method 1: 
 "extended trapezoidal rule"
+
+사다리꼴 공식(trapezoidal rule of integration)
+f(x)의 적분을 사다리꼴 넓이로 근사시키는 방법
+-> 가장 단순하지만 오차가 크긴 함.
+
+넓이 S = 1/2*(f[a] + f[b]) *(b-a)
+
+f(x) 적분은 약 (b-a)(f[a] + f[b]) / 2 에 수렴
+-> 죽, 함수값의 평균값
+
 '''
 from __future__ import print_function
 
