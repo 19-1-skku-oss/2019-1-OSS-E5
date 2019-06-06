@@ -5,9 +5,8 @@ class Node: # This is the Class Node with constructor that contains data variabl
         self.right = None
 
 def display(tree): #In Order traversal of the tree
-
     if tree is None: 
-        return
+        return 0
 
     if tree.left is not None:
         display(tree.left)
@@ -41,6 +40,11 @@ def is_full_binary_tree(tree): # This functions returns that is it full binary t
     else:
         return False
 
+def deleteTree(tree): # Delete tree
+        tree.left = None
+        tree.right = None
+        tree.data = None
+
 
 def main(): # Main func for testing.
     tree = Node(1)
@@ -54,9 +58,14 @@ def main(): # Main func for testing.
     tree.right.left.left.right = Node(9)
 
     print(is_full_binary_tree(tree))
-    print(depth_of_tree(tree))
+    print("Depth of this tree is : ", depth_of_tree(tree))
     print("Tree is: ")
     display(tree)
+    
+    deleteTree(tree)
+    print("After deleting the tree is: ")
+    display(tree)
+    print("After deleting tree depth of this tree is : ", depth_of_tree(tree))
 
 
 if __name__ == '__main__':
