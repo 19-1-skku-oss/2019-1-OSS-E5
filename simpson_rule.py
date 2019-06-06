@@ -22,7 +22,8 @@ from __future__ import print_function
 def method_2(boundary, steps):
 # "Simpson Rule"
 # int(f) = delta_x/2 * (b-a)/3*(f1 + 4f2 + 2f_3 + ... + fn)
-	h = (boundary[1] - boundary[0]) / steps
+	
+	h = (boundary[1] - boundary[0]) / steps (한 칸의 크기 설정)
 	a = boundary[0]
 	b = boundary[1]
 	x_i = makePoints(a,b,h)
@@ -39,17 +40,17 @@ def makePoints(a,b,h):
 	x = a + h
 	while x < (b-h):
 		yield x
-		x = x + h
+		x = x + h  ##update
 
 def f(x): #enter your function here
 	y = (x-0)*(x-0)
 	return y
 
 def main():
-	a = 0.0 #Lower bound of integration
-	b = 1.0	#Upper bound of integration
-	steps = 10.0		#define number of steps or resolution
-	boundary = [a, b]	#define boundary of integration
+	a = 0.0 #Lower bound of integration(초기점)
+	b = 1.0	#Upper bound of integration(마침점)
+	steps = 10.0		#define number of steps or resolution(간격)
+	boundary = [a, b]	#define boundary of integration(범위)
 	y = method_2(boundary, steps)
 	print('y = {0}'.format(y))
 
