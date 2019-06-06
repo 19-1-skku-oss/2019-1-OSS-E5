@@ -1,3 +1,11 @@
+r'''
+basic_binary_tree is basic tree.
+Node consist of two (left, right) target and data.
+binary tree can be used in many ways. (EX. it can shorten searching time)
+This is for understanding.
+so I recommand you just to get some ideas for making more usefull binary tree.
+ '''
+
 class Node: # This is the Class Node with constructor that contains data variable to type data and left,right pointers.
     def __init__(self, data):
         self.data = data
@@ -70,3 +78,16 @@ def main(): # Main func for testing.
 
 if __name__ == '__main__':
     main()
+    
+    r'''
+    Example
+                    1
+                 /     \
+                2       3
+               / \     / 
+              4   5  7   
+                 /  /
+                6  8
+                    \
+                     9
+    '''
