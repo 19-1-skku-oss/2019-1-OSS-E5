@@ -36,7 +36,9 @@ Original URL: <https://github.com/19-1-skku-oss/Python>
 
 **Implementation of Circular list**
 - Worker: 배상준(SangJun Pae, <psj97047@naver.com>)
-- What is Circular list?
+- Organizing files in our git.
+- Make more data structure code or add function or write explanation.
+- Make doccuments to help user to know and understand by themseleves.
 
 **Implementation of Maths file**
 - Worker: 김지영(JiYoung Kim, <pitlover@naver.com>)
