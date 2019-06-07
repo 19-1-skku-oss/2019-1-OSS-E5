@@ -83,4 +83,33 @@ class BTree(object):
 			parent = _splitChild(cur_node)
 			_balancing(parent)
 
-	
+	def _splitChild(self, cur_node):
+		currentParent = None
+		splitIndex = self.degree / 2
+		risingKey = cur_node.keys[splitIndex]
+		right = BTreeNode(self.degree, cur_node.leaf)
+		if cur_node.parent:
+			currentParent = cur_node.parent
+			i = 0
+			while i < len(currentParent)+1 and currentParent.child[i] != cur_node:
+				i += 1
+			j = len(currentParent.keys)
+			while j > i:
+				currentParent.child[j+1] = currentParent.child[j]
+				currentParent.keys[j] = currentParent.keys[j-1]
+				j -= 1
+
+			currentParent.keys[i] = risingKey
+			currentParent.child[j+1] = right
+			right.parent = currentParent
+
+		i = splitIndex + 1
+		while  i < (len(cur_node.keys)+1):
+			right.child[i - splitIndex - 1]  = cur_node.child[i]
+			if cur_node.child[i]:
+				right.leaf = False
+				if cur_node.child[i]:
+					cur_node.child[i].parent = right
+				cur_node.child[i] = None
+
+		
