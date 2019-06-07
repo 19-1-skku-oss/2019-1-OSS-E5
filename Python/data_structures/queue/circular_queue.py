@@ -1,5 +1,12 @@
 """Circular Queue represented by a python list"""
 class CircularQueue:
+	"""A Circular Queue(buffer) is a data structure that uses a single, fixed-size
+	buffer as if it were connected end-to-end. This structure lends itself easily
+	to buffering data streams. It does not need to have its elements shuffled
+	arround when one is consumed.
+
+	https://en.wikipedia.org/wiki/Circular_buffer
+	"""
 
 	def __init__(self):
 		self.queue = []
