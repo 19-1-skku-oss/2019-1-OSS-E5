@@ -10,45 +10,49 @@ Last updated: 2019-06-07
 For more detail about project: <br>
 [2019-1-OSS-E5 Wiki page](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
   
-## Original project
-Original project is for python algorithm education : <br>
-[Original project Link](https://github.com/TheAlgorithms/Python)
 
-
-
-Send email: <jaewan7599@skku.edu>
-## About Project
+## About Original Project
 All Algorithms implemented in python
 
 
 These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
 
 
-Original URL: <https://github.com/19-1-skku-oss/Python>
+[Original project Link](https://github.com/TheAlgorithms/Python)
 
 
 ![python](https://www.python.org/static/opengraph-icon-200x200.png)
 
-## Detail link to Our Work
-**문재완**
-- Worker: 문재완(Jaewan Moon, <jaewan7599@skku.edu>)
-- What is BTree?
+## Our project & Activity
 
-- Snapshot of BTree
+
+if you have question?
+Send email: <jaewan7599@skku.edu>
+
+## Code link to Our Work
+**문재완**
+Worker: 문재완(Jaewan Moon, <jaewan7599@skku.edu>)
+1. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/BTree.py)
 
 **임성근**
-- Worker: 임성근(Sunggeun Lim, <nicholas369@naver.com>)
-- What is Priority Queue?
+Worker: 임성근(Sunggeun Lim, <nicholas369@naver.com>)
+1. [circular_queue.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue/circular_queue.py)
 
 **김지영**
-- Worker: 배상준(SangJun Pae, <psj97047@naver.com>)
-- Organizing files in our git.
-- Make more data structure code or add function or write explanation.
-- Make doccuments to help user to know and understand by themseleves.
+Worker: 김지영(JiYoung Kim, <pitlover@naver.com>)
+Modifying and improving existing file errors in maths. 
+1. [absMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/absMin.py)
 
-**Implementation of Maths file**
-- Worker: 김지영(JiYoung Kim, <pitlover@naver.com>)
-- Modifying and improving existing file errors in maths. 
+
+**배상준**
+Worker: 배상준(SangJun Pae, <psj97047@naver.com>)
+Organizing files in our git.
+Make more data structure code or add function or write explanation.
+Make doccuments to help user to know and understand by themseleves.
+1. [Circular_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/Circular_linked_list.py)
+2. [basic_binary_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/basic_binary_tree.py)
+3. [binary_search_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/binary_search_tree.py)
+
 
 
 
@@ -71,7 +75,7 @@ Original URL: <https://github.com/19-1-skku-oss/Python>
 - Git ID: nicholas369 <br>
 - Student ID : 2015311988 <br>
 - Email Adreess : nicholas369@naver.com <br>
-- Role : <br>
+- Role : Static page, <br>
 
 **배상준(SangJun Pae)** 
 - Git ID: jun-honey <br>
