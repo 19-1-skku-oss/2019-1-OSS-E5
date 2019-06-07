@@ -59,7 +59,7 @@ Send email: <jaewan7599@skku.edu>
 - Git ID: jaewan7599 <br>
 - Student ID : 2017312554 <br>
 - Email Adreess : jaewan7599@skku.edu <br>
-- Role : Team Leder, <br>
+- Role : Team Leader, <br>
 
 **김지영(JiYoung Kim)** 
 - Git ID: pltlover <br>
