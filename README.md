@@ -36,6 +36,8 @@ if you have question?
 Send email: <jaewan7599@skku.edu>
 
 ## Code link to Our Work
+개인일일성과 업로드 링크: [Detail of each person every day avtivity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity) <br> 
+<br>
 **문재완** <br>
 `Worker`: 문재완 (Jaewan Moon, <jaewan7599@skku.edu>)
 1. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/BTree.py)
@@ -60,8 +62,8 @@ Send email: <jaewan7599@skku.edu>
 
 
 ## Contributing Member
-
-
+개인정보 조회 링크 : [Link To Member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)<br>
+<br>
 **문재완(Jaewan Moon)**
 - Git ID: jaewan7599 <br>
 - Student ID : 2017312554 <br>
