@@ -2,11 +2,11 @@
 ![skku](https://ecostat.skku.edu/_res/board_new/img/board/article_no_img.png)
 
 
-## About our Team
+## About Our Team
 Last updated: 2019-06-07
 
 
-## Link to Wiki page
+## Link to Wiki Page
 For more detail about project: <br>
 [2019-1-OSS-E5 Wiki page](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
   
@@ -23,10 +23,10 @@ These implementations are for demonstration purposes. They are less efficient th
 
 ![python](https://www.python.org/static/opengraph-icon-200x200.png)
 
-## Our project & Activity
+## Our Project & Activity
 Improve original project by :
 1. Make new algorithm files.
-2. Explanation for py file.
+2. Korean explanation for py file.
 3. Organize folders.
 4. Add function for py file.
 5. Add comments in py file to help undertand code better.
@@ -35,7 +35,7 @@ Improve original project by :
 if you have question?
 Send email: <jaewan7599@skku.edu>
 
-## Code link to Our Work
+## Link to Our Work Code
 개인일일성과 업로드 링크: [Detail of each person every day avtivity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity) <br> 
 <br>
 **문재완** <br>
@@ -57,6 +57,9 @@ Send email: <jaewan7599@skku.edu>
 1. [Circular_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/Circular_linked_list.py)
 2. [basic_binary_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/basic_binary_tree.py)
 3. [binary_search_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/binary_search_tree.py)
+4. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md)
+5. [wiki: Project member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)
+6. [wiki: Every Day Activity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity)
 
 
 
