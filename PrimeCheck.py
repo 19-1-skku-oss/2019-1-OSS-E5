@@ -1,10 +1,16 @@
+## algorithms that check whether the number is prime.
+## 소수인지 판별
+
+
 import math
 import unittest
 
 
 def primeCheck(number):
-    """
+    """수
     A number is prime if it has exactly two dividers: 1 and itself.
+
+    소수의 정의 : 1과 자기 자신을 약수로 가지는 
     """
     if number < 2:
         # Negatives, 0 and 1 are not primes
@@ -18,23 +24,13 @@ def primeCheck(number):
 
     # Except 2, all primes are odd. If any odd value divide
     # the number, then that number is not prime.
+    # 3이하의 짝수인 소수는 2일 뿐 -> 그 외 모든 짝수는 소수가 아니다!
+
     odd_numbers = range(3, int(math.sqrt(number)) + 1, 2)
     return not any(number % i == 0 for i in odd_numbers)
 
 
 class Test(unittest.TestCase):
-    def test_primes(self):
-        self.assertTrue(primeCheck(2))
-        self.assertTrue(primeCheck(3))
-        self.assertTrue(primeCheck(5))
-        self.assertTrue(primeCheck(7))
-        self.assertTrue(primeCheck(11))
-        self.assertTrue(primeCheck(13))
-        self.assertTrue(primeCheck(17))
-        self.assertTrue(primeCheck(19))
-        self.assertTrue(primeCheck(23))
-        self.assertTrue(primeCheck(29))
-
     def test_not_primes(self):
         self.assertFalse(primeCheck(-19),
                 "Negative numbers are not prime.")
