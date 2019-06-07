@@ -1,3 +1,4 @@
+"""Priority Queue represented by a python list"""
 class PriorityQueue():
 	
 	#Initialize constructor
