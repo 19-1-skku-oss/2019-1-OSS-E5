@@ -111,5 +111,23 @@ class BTree(object):
 				if cur_node.child[i]:
 					cur_node.child[i].parent = right
 				cur_node.child[i] = None
-
+			
+		i = splitIndex + 1
+		while i< len(cur_node.keys):
+			right.keys[i - splitIndex - 1] = cur_node.keys[i]
 		
+		left = cur_node
+		
+		if cur_node.parent:
+			return cur_node.parent
+		
+		else:
+			self.root = BTreeNode(self.degree, cur_node.leaf)
+			self.root.keys[0] = risingKey
+			self.child[0] = left
+			self.child[1] = right
+			left.parent = self.root
+			right.parent = self.root
+			self.root.leaf = False
+			return self.root
+	
