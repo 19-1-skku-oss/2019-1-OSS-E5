@@ -1,32 +1,36 @@
+"""Circular Queue represented by a python list"""
 class CircularQueue:
 
-	#Initialize constructor
 	def __init__(self):
 		self.queue = []
 		self.head = 0
 		self.tail = 0
 		self.max = 20
 
-	#Output string
 	def __str__(self):
 		printed = '<' + str(self.queue)[self.head:self.tail] + '>'
 		return printed
 	
-	#Current size of queue
+	"""Returns the length of self.queue"""
 	def size(self):
 		if self.tail >= self.head:
 			return (self.tail - self.head)
 		return (self.max - (self.head - self.tail))
-		
-	#Push element to the queue
-	def enqueue(self, data):
+	
+	"""Enqueues {@code item}
+	@param item
+		item to enqueue"""
+	def enqueue(self, item):
 		if self.size() == self.max
 			return False
-		self.queue.insert(self.tail, data)
+		self.queue.insert(self.tail, item)
 		self.tail = (self.tail + 1) % self.max
 		return True
 
-	#Pop element from the queue
+	"""Dequeues {@code item}
+	@requirement: self.sie > 0
+	@return dequeued
+		item that was dequeued"""
 	def dequeue(self):
 		if self.size() == 0:
 			return false
@@ -34,10 +38,10 @@ class CircularQueue:
 		self.head = (self.head + 1) % self.max
 		return data
 
-	#Data in head
+	"""Returns item at head of self.queue"""
 	def head(self):
 		return self.queue[self.head]
 	
-	#Data in tail
+	"""Returns item at tail of self.queue"""
 	def tail(self):
 		return self.queue[self.tail]

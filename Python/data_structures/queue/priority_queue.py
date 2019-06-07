@@ -1,3 +1,4 @@
+"""Priority Queue represented by a python list"""
 class PriorityQueue():
 	
 	#Initialize constructor
@@ -11,7 +12,10 @@ class PriorityQueue():
 		printed = '<' + str(self.queue)[self.front:self.front+self.length-1] + '>'
 		return printed
 
-	#Push element to the queue
+	"""Enqueues {@code item}
+	@param item
+		item to enqueue
+		regarding of order"""
 	def put(self, item):
 		for i in range(self.front, self.front+self.length):
 			if(item > self.queue[i]):
@@ -19,7 +23,9 @@ class PriorityQueue():
 		self.length = self.length + 1
 		return 1
 
-	#Pop element from the queue
+	"""Dequeues {@code item}
+	@return dequeued
+		item that was dequeued"""
 	def get(self):
 		self.length = self.length - 1
 		dequeued = self.queue[self.front]
@@ -27,10 +33,10 @@ class PriorityQueue():
 		self.queue = self.queue[self.front:]
 		return dequeued
 	
-	#Data in front
+	"""Returns item at from of self.queue"""
 	def front(self):
 		return self.queue[self.front]
 	
-	#Current size of queue
+	"""Returns the length of self.queue"""
 	def size(self):
 		return self.length
