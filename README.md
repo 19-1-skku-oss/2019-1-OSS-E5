@@ -36,7 +36,8 @@ Send email: <jaewan7599@skku.edu>
 
 **임성근**<br>
 `Worker` : 임성근 (Sunggeun Lim, <nicholas369@naver.com>)
-1. [circular_queue.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue/circular_queue.py)
+1. [queue](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue)
+2. [stack](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/stack)
 
 **김지영**<br>
 `Worker` : 김지영 (JiYoung Kim, <pitlover@naver.com>)
@@ -71,10 +72,10 @@ Send email: <jaewan7599@skku.edu>
 - Git ID: nicholas369 <br>
 - Student ID : 2015311988 <br>
 - Email Adreess : nicholas369@naver.com <br>
-- Role : Static page, <br>
+- Role : Static page, Edit and add file to datastructure <br>
 
 **배상준(SangJun Pae)** 
 - Git ID: jun-honey <br>
 - Student ID : 2018310364 <br>
 - Email Adreess : psj97047@naver.com <br>
-- Role : Data structure, Edit and add file to datastructure, Discription of topic <br>
+- Role : Data structure, Edit and add file to datastructure, Description of topic <br>
