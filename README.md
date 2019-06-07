@@ -24,6 +24,12 @@ These implementations are for demonstration purposes. They are less efficient th
 ![python](https://www.python.org/static/opengraph-icon-200x200.png)
 
 ## Our project & Activity
+Improve original project by :
+1. Make new algorithm files
+2. Explanation for py file
+3. Organize folders
+4. Add function for py file
+5. Comments to help undertand better
 
 
 if you have question?
