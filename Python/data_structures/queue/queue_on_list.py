@@ -1,5 +1,14 @@
 """Queue represented by a python list"""
 class Queue():
+	""" A queue is an abstract data type that serves as a collection of
+	elements with two principal operations: enqueue() and dequeue(). 
+	enqueue() adds an element to the end of the queue, and dequeue() removes
+	an element from the front of the queue. The order in which elements come
+	off of a queue are First In, First Out (FIFO).
+
+	https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
+	"""
+
     def __init__(self):
         self.entries = []
         self.length = 0
