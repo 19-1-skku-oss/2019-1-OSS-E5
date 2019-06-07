@@ -2,10 +2,6 @@
 ## 소수인지 판별
 
 
-import math
-import unittest
-
-
 def primeCheck(number):
     """
     A number is prime if it has exactly two dividers: 1 and itself.수
@@ -15,8 +11,14 @@ def primeCheck(number):
     if number < 2:
         # Negatives, 0 and 1 are not primes
         return False
+   
+   elif number == 2:
+	return True
+
+   if n % 2 == 0:
+	return False
     
-   for i in range(2, n):
+   for i in range(3, n, 2):
 	if n%i == 0:
 		return False
 	return True
