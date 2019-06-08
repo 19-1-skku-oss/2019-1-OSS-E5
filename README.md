@@ -54,8 +54,14 @@ Send email: <jaewan7599@skku.edu>
 1. [3n+1.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/3n%2B1.py)
 2. [FindMax.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMax.py)
 3. [FindMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMin.py)
+4. [Hanoi.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/Hanoi.py)
+5. [abs.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/abs.py)
+6. [absMax.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/absMax.py)
+7. [absMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/absMin.py)
+8. [average.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/average.py)
+9. [factorial_python.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_python.py)
+10. [factorial_recursion.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_recursion.py)
 
-[absMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/absMin.py)
 
 
 **배상준**<br>
