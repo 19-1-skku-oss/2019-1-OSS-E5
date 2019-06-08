@@ -51,7 +51,11 @@ Send email: <jaewan7599@skku.edu>
 
 **김지영**<br>
 `Worker` : 김지영 (JiYoung Kim, <pitlover@naver.com>)
-1. [absMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/absMin.py)
+1. [3n+1.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/3n%2B1.py)
+2. [FindMax.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMax.py)
+3. [FindMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMin.py)
+
+[absMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/absMin.py)
 
 
 **배상준**<br>
