@@ -68,7 +68,7 @@ Send email: <jaewan7599@skku.edu>
 15. [PrimeCheck_basic.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/PrimeCheck_basic.py)
 16. [PrimeCheck.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/PrimeCheck.py)
 17. [find_lcm.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_lcm.py)
-18. [find_gcd](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_gcd.py)
+18. [find_gcd.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_gcd.py)
 
 
 **배상준**<br>
