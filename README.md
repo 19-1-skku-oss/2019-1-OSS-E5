@@ -32,11 +32,13 @@ Improve original project by :
 5. Add comments in py file to help undertand code better.
 6. Korean README file in each algorithm file.
 
+프로젝트 마일스톤 : [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
+
 if you have question?
 Send email: <jaewan7599@skku.edu>
 
 ## Link to Our Work Code
-개인일일성과 업로드 링크: [Detail of each person every day avtivity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity) <br> 
+개인 일일 성과 업로드 링크: [Detail of each person every day activity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity) <br> 
 <br>
 **문재완** <br>
 `Worker`: 문재완 (Jaewan Moon, <jaewan7599@skku.edu>)
