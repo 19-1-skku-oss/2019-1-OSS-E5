@@ -5,13 +5,13 @@
 So anybody can contribute by translating py code English to korean. <br>
 We need a lot of help in this area.
 
-**Adding Code**
+**Adding Code** <br>
 We need addtional code and variaty of algorithms :
 - Add algorithm
 - Add function
 - Delete unneeded file
 
-**Explaning algorithms**
+**Explaning algorithms** <br>
 There are too little explanation for Beginner. So you can contribute by :
 - Explanation in py code
 - Explanation in README file.
