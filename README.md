@@ -61,7 +61,14 @@ Send email: <jaewan7599@skku.edu>
 8. [average.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/average.py)
 9. [factorial_python.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_python.py)
 10. [factorial_recursion.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_recursion.py)
-
+11. [modular_exponential.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/modular_exponential.py)
+12. [simpson_rule.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/simpson_rule.py)
+13. [trapezoidal_rule.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/trapezoidal_rule.py)
+14. [fibonacci_iteration.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/fibonacci_iteration.py)
+15. [PrimeCheck_basic.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/PrimeCheck_basic.py)
+16. [PrimeCheck.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/PrimeCheck.py)
+17. [find_lcm.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_lcm.py)
+18. [find_gcd](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_gcd.py)
 
 
 **배상준**<br>
