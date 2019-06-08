@@ -79,8 +79,8 @@ Send email: <jaewan7599@skku.edu>
 4. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md)
 5. [wiki: Project member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)
 6. [wiki: Every Day Activity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity)
-7. [Wiki Home](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki) Make wiki home
-8. [Wiki Project Milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone) Make Wiki Project Milestone
+7. [Wiki Home](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
+8. [Wiki Project Milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 
 
 
