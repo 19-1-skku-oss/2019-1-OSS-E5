@@ -36,7 +36,11 @@ def f(x):
 	function = (x*x*X) - (2*x) - 1
 	return function
 
-def newton_raphson(f, x0=0, maxiter=100, step=0.0001, maxerror=1e-6,logsteps=False):
+def newton_raphson(x):
+	newton = x - (f(x)/calc_derivative(x))
+
+
+def newton_raphson(p, n):
     
     a = x0 #set the initial guess
     steps = [a]
