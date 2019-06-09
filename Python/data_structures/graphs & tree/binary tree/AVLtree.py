@@ -1,10 +1,39 @@
-# -*- coding: utf-8 -*-
 '''
-An auto-balanced binary tree!
+An auto-balanced binary tree
+Problem of simple binary tree is that if input comes unbalenced, time spent for searching element will be almost same as O(n).
+For Example
+:
+     1
+      \
+       2
+        \
+         4
+        /  \
+       3    5
+
+in This case it is better to save this tree sturcture like this
+:
+    2
+   / \
+  1   4
+     /  \
+    3    5
+
+AVL tree will automatically balce left and right balance level.
+So that it`s efficience will be great.
+Tool for balancing isfour kind of rotation.
+1. leftrotation
+2. rightrotation
+3. rlrotation
+4. lrrotation
+
+Details are at it`s function.
 '''
-import math
-import random
-class my_queue:
+
+import math # Get math library
+import random # Get random library
+
+class my_queue: # Make structure of queue --> later used in traverse and show tree in right format.
     def __init__(self):
         self.data = []
         self.head = 0
@@ -25,7 +54,7 @@ class my_queue:
         print("**************")
         print(self.data[self.head:self.tail])
         
-class my_node:
+class my_node: # Make structure of node
     def __init__(self,data):
         self.data = data
         self.left = None
@@ -64,7 +93,7 @@ def my_max(a,b):
 
 
 
-def leftrotation(node):
+def leftrotation(node):# If left side of tree is deeper(left side child + left side child), than leftrotation makes total tree balanced.
     r'''
             A                      B
            / \                    / \
@@ -86,7 +115,7 @@ def leftrotation(node):
     ret.setheight(h2)
     return ret
 
-def rightrotation(node):
+def rightrotation(node): # If right side of tree is deeper(right side child + right side child), than rightrotation makes total tree balanced.
     '''
         a mirror symmetry rotation of the leftrotation
     '''
@@ -100,12 +129,13 @@ def rightrotation(node):
     ret.setheight(h2)
     return ret
 
-def rlrotation(node):
+def rlrotation(node):  # If right side of tree is deeper(right side child + left side child), than rightrotation makes total tree balanced.
     r'''
+    Two steps :
             A              A                    Br      
            / \            / \                  /  \
-          B   C    RR    Br  C       LR       B    A
-         / \       -->  /  \         -->    /     / \
+          B   C    RR    Br  C       LL       B    A
+         / \       -->  /  \         -->    /     / \    == RL
         Bl  Br         B   UB              Bl    UB  C  
              \        /
              UB     Bl
@@ -114,12 +144,16 @@ def rlrotation(node):
     node.setleft(rightrotation(node.getleft()))
     return leftrotation(node)
 
-def lrrotation(node):
+def lrrotation(node): # If right side of tree is deeper(left side child + right side child), than rightrotation makes total tree balanced.
+    '''
+        a mirror symmetry rotation of the lrrotation
+        Two steps : LL --> RL  == LR
+    '''
     node.setright(leftrotation(node.getright()))
     return rightrotation(node)
 
 
-def insert_node(node,data):
+def insert_node(node,data): # Insert node following AVLTree rule.
     if node is None:
         return my_node(data)
     if data < node.getdata():
@@ -140,16 +174,16 @@ def insert_node(node,data):
     node.setheight(h1)
     return node
 
-def getRightMost(root):
+def getRightMost(root): # Right most child
     while root.getright() is not None:
         root = root.getright()
     return root.getdata()
-def getLeftMost(root):
+def getLeftMost(root): # Left most child
     while root.getleft() is not None:
         root = root.getleft()
     return root.getdata()
 
-def del_node(root,data):
+def del_node(root,data): # Delet node following AVLTree rule.
     if root.getdata() == data:
         if root.getleft() is not None and root.getright() is not None:
             temp_data = getLeftMost(root.getright())
@@ -186,17 +220,16 @@ def del_node(root,data):
     root.setheight(height)
     return root
 
-class AVLtree:
+class AVLtree: # Integrate made functions to AVLTree for efficiency and to see balancing work of tree
     def __init__(self):
         self.root = None
     def getheight(self):
-#        print("yyy")
         return getheight(self.root)
-    def insert(self,data):
+    def insert(self,data):# Show inserting process
         print("insert:"+str(data))
         self.root = insert_node(self.root,data)
         
-    def del_node(self,data):
+    def del_node(self,data): # Show deleting process.
         print("delete:"+str(data))
         if self.root is None:
             print("Tree is empty!")
@@ -235,12 +268,9 @@ class AVLtree:
         print()
         print("*************************************")
         return
-    
-    def test(self):
-        getheight(None)
-        print("****")
-        self.getheight()
-if __name__ == "__main__":
+
+        
+if __name__ == "__main__": # Main for test : It prints AVLTree process.
     t = AVLtree()
     t.traversale()
     l = list(range(10))
@@ -253,3 +283,119 @@ if __name__ == "__main__":
     for i in l:
         t.del_node(i)
         t.traversale()
+
+
+
+
+    '''
+    You can add more function in basic search tree by changing little code.
+    But I will not include this for understaning AVLTree easily.
+    
+    For Example :
+    
+        def deleteTree(self): # Delete total tree
+        self.root= None
+    
+    def getNode(self, label): # Search for label
+        curr_node = None
+        #If the tree is not empty
+        if(not self.empty()):
+            #Get tree root
+            curr_node = self.getRoot()
+            #While we don't find the node we look for
+            #I am using lazy evaluation here to avoid NoneType Attribute error
+            while curr_node is not None and curr_node.getLabel() is not label:
+                #If node label is less than current node
+                if label < curr_node.getLabel():
+                    #We go left
+                    curr_node = curr_node.getLeft()
+                else:
+                    #Else we go right
+                    curr_node = curr_node.getRight()
+        return curr_node
+
+    def getMax(self, root = None): # Find max node
+        if(root is not None):
+            curr_node = root
+        else:
+            #We go deep on the right branch
+            curr_node = self.getRoot()
+        if(not self.empty()):
+            while(curr_node.getRight() is not None):
+                curr_node = curr_node.getRight()
+        return curr_node
+
+    def getMin(self, root = None): # Find min node
+        if(root is not None):
+            curr_node = root
+        else:
+            #We go deep on the left branch
+            curr_node = self.getRoot()
+        if(not self.empty()):
+            curr_node = self.getRoot()
+            while(curr_node.getLeft() is not None):
+                curr_node = curr_node.getLeft()
+        return curr_node
+
+    def empty(self): # Check tree this is empty
+        if self.root is None:
+            return True
+        return False
+
+    def __InOrderTraversal(self, curr_node): # Traverse tree (Inorder: There are three ways to traverse 1)
+        nodeList = []
+        if curr_node is not None:
+            nodeList.insert(0, curr_node)
+            nodeList = nodeList + self.__InOrderTraversal(curr_node.getLeft())
+            nodeList = nodeList + self.__InOrderTraversal(curr_node.getRight())
+        return nodeList
+
+    def PreOrder(curr_node): # Traverse tree (PreOrder: There are three ways to traverse 2)
+        nodeList = []
+        if curr_node is not None:
+            nodeList = nodeList + PreOrder(curr_node.getLeft())
+            nodeList.insert(0, curr_node.getLabel())
+            nodeList = nodeList + PreOrder(curr_node.getRight())
+        return nodeList
+
+    def PostOrder(curr_node): # Traverse tree (PostOrder: There are three ways to traverse 3)
+        nodeList = []
+        if curr_node is not None:
+            nodeList = nodeList + PostOrder(curr_node.getLeft())
+            nodeList = nodeList + PostOrder(curr_node.getRight())
+            nodeList.insert(0, curr_node.getLabel())
+        return nodeList
+
+    def getRoot(self): #Get root for OOP disign
+        return self.root
+
+    def __isRightChildren(self, node): # Tell if node is in rightchild
+        if(node == node.getParent().getRight()):
+            return True
+        return False
+
+    def __reassignNodes(self, node, newChildren): # Reassignnode for edit
+        if(newChildren is not None):
+            newChildren.setParent(node.getParent())
+        if(node.getParent() is not None):
+            #If it is the Right Children
+            if(self.__isRightChildren(node)):
+                node.getParent().setRight(newChildren)
+            else:
+                #Else it is the left children
+                node.getParent().setLeft(newChildren)
+
+    #This function traversal the tree. By default it returns an
+    #In order traversal list. You can pass a function to traversal
+    #The tree as needed by client code
+    def traversalTree(self, traversalFunction = None, root = None):
+        if(traversalFunction is None):
+            #Returns a list of nodes in preOrder by default
+            return self.__InOrderTraversal(self.root)
+        else:
+            #Returns a list of nodes in the order that the users wants to
+            return traversalFunction(self.root)
+
+    #Returns an string of all the nodes labels in the list 
+    #In Order Traversal
+    '''
