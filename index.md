@@ -2,13 +2,16 @@
 <center> <h2> <strong> Algorithm - Python </strong> </h2> </center> <br>
 
 <center>
+
 [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 [Contributing Member](#contributing-member)
 [Link to Our Work Code](#link-to-our-work-code)
+
 </center>
 
 ## Link to Our Work Code
 <center>
+
 | Jaewan Moon | Sunggeun Lim | Jiyoung Kim | Sangjun Pae |
 |---|---|---|---|
 |[Btree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/BTree.py)|[queue](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue)|[3n+1.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/3n%2B1.py)|[Circular_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/Circular_linked_list.py)
@@ -20,6 +23,7 @@
 |||[absMin.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/absMin.py)|[Wiki Home](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
 |||[average.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/average.py)|[Wiki Project Milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 |||[factorial_python.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_python.py)|[How to Contribute](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/CONTRIBUTING.md)
+
 </center>
 
 ## Contributing Member
