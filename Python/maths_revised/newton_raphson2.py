@@ -25,3 +25,44 @@ import math as m
 
 ## another version of newton_raphson algorithms
 ## 더 간단하고 쉬운 방법으로 다른 버전으로 짜기!
+
+import from abs
+
+def func(x):
+	fun = x*x*X - x*x + 2
+	return fun
+
+def deriveFunc(doulbe x):
+	fun = 3*x*x - 2*x
+	return fun
+
+def newton_raphson2(x):
+	h = func(x)
+	while(abs(h) >= EPSLION)
+	{
+		h = func(x)/derivFunc(x)
+		x =x - h
+	}
+	print("the value of the root is : ", x)
+	
+if __name__ == '__main__':
+
+	x0 = -20
+	newton_raphson2(x0)
+	return 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
