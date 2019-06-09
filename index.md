@@ -5,6 +5,7 @@
 [<center>Link to project milestone</center>](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 [<center>Contributing Member</center>](#contributing-member)
 [<center>Link to Our Work Code</center>](#link-to-our-work-code)
+[<center>How to Contribute</center>](#how-to-contribute)
 
 
 ## Link to Our Work Code
@@ -48,3 +49,21 @@
 - Student ID : 2018310364 <br>
 - Email Adreess : psj97047@naver.com <br>
 - Role : Data structure, Edit and add file to datastructure, Description of topic <br>
+
+## How to Contribute
+**Korean Translation**<br>
+- lots of files are only written in English. <br>
+So anybody can contribute by translating py code English to korean. <br>
+We need a lot of help in this area.
+
+**Adding Code** <br>
+We need addtional code and variaty of algorithms :
+- Add algorithm
+- Add function
+- Delete unneeded file
+
+**Explaning algorithms** <br>
+There are too little explanations for beginners. So you can contribute by :
+- Explanation in py code
+- Explanation in README file.
+
