@@ -1,13 +1,11 @@
 <center> <h1> <strong> 2019-1-OSS-E5 </strong> </h1> </center> <br>
 <center> <h2> <strong> Algorithm - Python </strong> </h2> </center> <br>
 
-<p align="center">
 
-[Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
-[Contributing Member](#contributing-member)
-[Link to Our Work Code](#link-to-our-work-code)
+[<center>Link to project milestone</center>](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
+[<center>Contributing Member</center>](#contributing-member)
+[<center>Link to Our Work Code</center>](#link-to-our-work-code)
 
-</p>
 
 ## Link to Our Work Code
 
