@@ -1,5 +1,5 @@
-<center> ### **2019-1-OSS-E5** </center> <br>
-<center> ### **Algorithm - Python** </center> <br>
+<center> <h1> **2019-1-OSS-E5** </h1> </center> <br>
+<center> <h2> **Algorithm - Python** </h2> </center> <br>
 
 [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 
