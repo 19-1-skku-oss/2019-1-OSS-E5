@@ -18,22 +18,23 @@
    5. 구해진 근의 f(x)'가 0이 되는지를 판별한다. + 0에 수렴하는지
    6. x가 오차범위 이내가 아니라면 x'를 x로 갱신한다. 
    7. 2~6번 과정을 반복한다. 
-
-
-
-
-
     
 '''
 
 import math as m
 
-def calc_derivative(f, a, h=0.001):
+def calc_derivative(f, a, h):
     '''
      Calculates derivative at point a for function f using finite difference
      method
     '''
-    return (f(a+h)-f(a-h))/(2*h)
+    h = 0.000001
+    derivative = (f(x+h) - f(x)) / h
+    return drivative
+
+def f(x):
+	function = (x*x*X) - (2*x) - 1
+	return function
 
 def newton_raphson(f, x0=0, maxiter=100, step=0.0001, maxerror=1e-6,logsteps=False):
     
