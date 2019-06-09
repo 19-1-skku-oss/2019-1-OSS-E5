@@ -42,32 +42,17 @@ def newton_raphson(x):
 
 def newton_raphson(p, n):
     
+##p = 초기값(접선으로 그을 때 가장 처음이 되는 첫번째 점)
+##n = iterations의 수 (반복 과정의 수)
+
     a = x0 #set the initial guess
-    steps = [a]
-    error = abs(f(a))
-    f1 = lambda x:calc_derivative(f, x, h=step) #Derivative of f(x)
-    for _ in range(maxiter):
-        if f1(a) == 0:
-            raise ValueError("No converging solution found")
-        a = a - f(a)/f1(a) #Calculate the next estimate
-        if logsteps:
-            steps.append(a)
-        error = abs(f(a))
-        if error < maxerror:
-            break
-    else:
-        raise ValueError("Itheration limit reached, no converging solution found")
-    if logsteps:
-        #If logstep is true, then log intermediate steps
-        return a, error, steps
-    return a, error
+    for i in range(n):
+        if i == 0:  ## 처음 근사값을 계산. 
+            x = newton_raphson(p)
+	else:
+		x = newton+raphson(terate(x,n))
+	
+return x
  
 if __name__ == '__main__':
-    import matplotlib.pyplot as plt
-    f = lambda x:m.tanh(x)**2-m.exp(3*x)
-    solution, error, steps = newton_raphson(f, x0=10, maxiter=1000, step=1e-6, logsteps=True)
-    plt.plot([abs(f(x)) for x in steps])
-    plt.xlabel("step")
-    plt.ylabel("error")
-    plt.show()
-print("solution = {%f}, error = {%f}" % (solution, error))
+print iterate(1,3)  ## 여기서 함수 f(x) = x^3 - 2x -1
