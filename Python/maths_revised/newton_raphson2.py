@@ -21,10 +21,14 @@
     
 '''
 
-import math as m
-
 ## another version of newton_raphson algorithms
 ## 더 간단하고 쉬운 방법으로 다른 버전으로 짜기!
+
+'''
+Input : a function of x (x^3 - x^2 + 2)
+	derivative function of x (3x^2 -2x)
+	and an initial guess x0 = -20
+'''
 
 import from abs
 
