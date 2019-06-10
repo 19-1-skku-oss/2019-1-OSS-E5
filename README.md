@@ -3,7 +3,7 @@
 
 
 ## About Our Team
-Last updated: 2019-06-07
+Last updated: 2019-06-10
 
 
 ## Link to Wiki Page
