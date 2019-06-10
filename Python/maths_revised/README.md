@@ -8,20 +8,20 @@
 
 
 # 세부 항목들 
-3n+1
-Fibonacci
-FindMax
-FindMin
-Hanoi
-PrimeCheck
-abs
-absMax
-absMin
-average
-Factorial
-gcd
-lcm
-newton raphson
-sieve of erastosthenes
-simpson rule
-trapezodial
+**3n+1**
+**Fibonacci**
+**FindMax**
+**FindMin**
+**Hanoi**
+**PrimeCheck**
+**abs**
+**absMax**
+**absMin**
+**average**
+**Factorial**
+**gcd**
+**lcm**
+**newton raphson**
+**sieve of erastosthenes**
+**simpson rule**
+**trapezodial**
