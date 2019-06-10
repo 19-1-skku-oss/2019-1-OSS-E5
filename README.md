@@ -29,7 +29,7 @@ Improve original project by :
 2. Korean explanation for py file.
 3. Organize folders.
 4. Add function for py file.
-5. Add comments in py file to help undertand code better.
+5. Add comments in py file to help understand code better.
 6. Korean README file in each algorithm file.
 
 프로젝트 마일스톤 : [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
