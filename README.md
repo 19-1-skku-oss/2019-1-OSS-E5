@@ -117,7 +117,7 @@ Send email: <jaewan7599@skku.edu>
 
 ## How to Contribute
 
-**Korean Translation**<br>
+**Korean Translation(Description)**<br>
 - lots of files are only written in English. <br>
 So anybody can contribute by translating py code English to korean. <br>
 - We are looking forward to contribute for helping Korean educator who teaches basis of CS!
