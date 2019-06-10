@@ -24,8 +24,10 @@ These implementations are for demonstration and educational purposes. Almost par
 ![python](https://www.python.org/static/opengraph-icon-200x200.png)
 
 ## Our Project & Activity
-Improve original project by :
-1. Implement new algorithm codes(files).
+Improve original project by sequences below:
+1. Find new data structures or algorithm that are meaningful to educate, but didn't exist that original project.
+2. Search to get definition and actions of upper one.
+3. Get implementation with considering definition and actions.
 2. Korean explanation for implemented codes.
 3. Organize folders.
 4. Add function for implementing codes.
