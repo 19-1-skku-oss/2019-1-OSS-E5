@@ -1,3 +1,11 @@
+'''
+Solve is_Palindrome function using data structure linked list(more stack).
+Palindrome means that if you read something from left to right it is same with reading right to left.
+For example 12321.
+Linked list is most basic data structure.
+So using data structure to solve palindromic question will help you understand linked list.
+'''
+
 def is_palindrome(head):
     if not head:
         return True
