@@ -3,7 +3,8 @@
 - This is an example of a double ended, doubly linked list.
 - Each link references the next link and the previous one.
 - A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer, together with next pointer and data which are there in singly linked list.
- - Advantages over SLL - IT can be traversed in both forward and backward direction.,Delete operation is more efficent'''
+ - Advantages over SLL - IT can be traversed in both forward and backward direction.,Delete operation is more efficent
+'''
 from __future__ import print_function
 
 
@@ -42,12 +43,14 @@ class LinkedList:           #making main class named linked list
         self.tail.next = None                       # 2ndlast(tail) --> None
         return temp
     
-    def delete(self, x):
+    def delete(self, x):                            #Find x and delete x in list.
         current = self.head
         
         while(current.value != x):                  # Find the position to delete
             current = current.next
-            
+            if current == None:
+                return print("There is no ",x," in list")
+        
         if(current == self.head):
             self.deleteHead()
             
@@ -62,10 +65,17 @@ class LinkedList:           #making main class named linked list
         return(self.head is None)
         
     def display(self):                                #Prints contents of the list
+
+        if self.head == None:                         #Print None if its empty
+            print(None)
+            return
+        
         current = self.head
-        while(current != None):
+        while(current.next != None):
             current.displayLink()
-            current = current.next  
+            print("<-->", end=" ")
+            current = current.next
+        current.displayLink()
         print()
 
 class Link:
@@ -75,3 +85,38 @@ class Link:
         self.value = x
     def displayLink(self):
         print("{}".format(self.value), end=" ")
+
+if __name__=="__main__": # Test this data structure
+    DL = LinkedList()
+    if DL.isEmpty:
+        print("Double Linked list Empty")
+        print("Display list : ", end=" ")
+        DL.display()    
+    print("Insert Head 1 :\t", end=" ")
+    DL.insertHead("1")
+    DL.display()
+    print("Insert Head 2 :\t", end=" ")
+    DL.insertHead("2")
+    DL.display()
+    print("Insert Head 3 :\t", end=" ")
+    DL.insertHead("3")
+    DL.display()
+    print("Delete Head :\t", end=" ")
+    DL.deleteHead
+    DL.display()
+    print("Insert tail 4 :\t", end=" ")
+    DL.insertTail("4")
+    DL.display()
+    print("Insert tail 5 :\t", end=" ")
+    DL.insertTail("5")
+    DL.display()
+    print("Insert tail 6 :\t", end=" ")
+    DL.insertTail("6")
+    DL.display()
+    print("Delete tail :\t", end=" ")
+    DL.deleteTail()
+    DL.display()
+    x=input("Element you want to delete : ")
+    DL.delete(x)
+    print("After deleting ",x," :\t", end=" ")
+    DL.display()
