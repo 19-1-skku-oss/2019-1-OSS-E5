@@ -24,15 +24,17 @@ BTreeNode* createNode(bool _leaf)
 {
 	BTreeNode* newNode = (BTreeNode*)malloc(sizeof(BTreeNode));
 	int i;
-
+	
 	newNode->leaf = _leaf;
 
+	// Allocate memory for maximum number of possible keys and child pointers
 	newNode->keys = (int*)malloc(sizeof(int)*(degree+1));
 	newNode->C = (BTreeNode**)malloc(sizeof(BTreeNode*)*(degree+2));
 	
+	// Initialization child and parents
 	for(i=0; i<degree+2; i++)
 		newNode->C[i] = NULL;
-	
+
 	newNode->n = 0;
 	newNode->P = NULL;
 	
@@ -46,8 +48,10 @@ void traverse(BTreeNode* present)
 		int i;
 		for(i=0; i<present->n; i++)
 		{
+			// If present is not leaf node, traverse for child nodes
 			if (present->leaf == false)
 				traverse(present->C[i]);
+			// And then, print values
 			printf(" ");
 			printf("%d", present->keys[i]);
 		}
@@ -176,7 +180,7 @@ BTreeNode* _splitChild(BTreeNode* present)
 	
 	for(i=splitIndex + 1; i<present->n + 1; i++)
 	{
-		right->C[i - spliIndex - 1] = present->C[i];
+		right->C[i - splitIndex - 1] = present->C[i];
 		if (present->C[i] != NULL)
 		{
 			right->leaf = false;

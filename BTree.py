@@ -131,3 +131,68 @@ class BTree(object):
 			self.root.leaf = False
 			return self.root
 	
+	def removeElement(self, key):
+		if not self.root:
+			print("The tree is empty\n")
+			return
+			
+		_remove(self.root, key)
+		
+		if len(self.root.keys) == 0:
+			tmp = self.root
+			if root.leaf:
+				self.root = None
+			else
+				self.root = self.root.child[0]
+				self.root.parent = None
+		
+		return None
+	
+	def _remove(cur_node, key):
+		del_node = search(key)
+		if del_node == None:
+			print("%d is not exist\n", key)
+			return None
+		
+		i = len(del_node.keys) - 1
+		temp = del_node.keys[i]
+		
+		if del_node.leaf:
+			while i>0 and temp != key:
+				del_node.keys[i-1] = temp
+				temp = del_node.keys[i-1]
+				i -= 1
+			
+			_balancingAfterDel(del_node)
+		
+		else:
+			while i>0 and temp!=key:
+				i -= 1
+			
+			del_node.keys[i] = del_node.child[i].keys[len(del_node.child[i]) - 1]
+			_balancingAfterDel(del_node.child[i])
+		
+		return None
+		
+	def _balancingAfterDel(self, cur_node):
+		minKeys = (degree+2)/2 - 1
+		parentIndex = 0
+		
+		if len(cur_node.keys) < minKeys:
+			if not cur_node.parent:
+				if len(cur_node.keys) == 0:
+					self.root = cur_node.child[0]
+					if self.root:
+						self.root.parent = None
+			else:
+				parent = cur_node.parent
+				while parent.child[parentIndex] != cur_node:
+					parentIndex += 1
+				if parentIndex > 0 && len(parent.child[parentIndex-1].keys) > minKeys:
+					_borrowFromLeft(cur_node, parentIndex)
+				elif parentIndex < len(parent.keys) and len(parent.child[parentIndex+1].keys) > minKeys:
+					_borrowFromRight(cur_node, parentIndex)
+				elif parentIndex==0:
+					next = _merge(cur_node)
+					_balancingAfterDel(next.parent)
+					
