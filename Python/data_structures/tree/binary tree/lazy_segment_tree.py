@@ -1,3 +1,11 @@
+'''
+Add lazy Propagation to segment tree.
+So it is upgrade version of segment tree.
+This can make updating process time complexity go o(log N), which is more efficient than just segment tree.
+Studying this data structure you can contoll data more efficiently. 
+'''
+
+
 from __future__ import print_function
 import math
 
@@ -5,17 +13,17 @@ class SegmentTree:
     
     def __init__(self, N):
         self.N = N
-        self.st = [0 for i in range(0,4*N)] # approximate the overall size of segment tree with array N
-        self.lazy = [0 for i in range(0,4*N)] # create array to store lazy update
-        self.flag = [0 for i in range(0,4*N)] # flag for lazy update
+        self.st = [0 for i in range(0,4*N)] # Approximate the overall size of segment tree with array N
+        self.lazy = [0 for i in range(0,4*N)] # Create array to store lazy update
+        self.flag = [0 for i in range(0,4*N)] # Flag for lazy update
         
-    def left(self, idx):
+    def left(self, idx): # Find left child array index
         return idx*2
 
-    def right(self, idx):
+    def right(self, idx): # Find right child array index
         return idx*2 + 1
 
-    def build(self, idx, l, r, A):
+    def build(self, idx, l, r, A): # Bulid segment tree
         if l==r:
             self.st[idx] = A[l-1]
         else :
@@ -24,8 +32,8 @@ class SegmentTree:
             self.build(self.right(idx),mid+1,r, A)
             self.st[idx] = max(self.st[self.left(idx)] , self.st[self.right(idx)])
 
-    # update with O(lg N) (Normal segment tree without lazy update will take O(Nlg N) for each update)
-    def update(self, idx, l, r, a, b, val): # update(1, 1, N, a, b, v) for update val v to [a,b]
+    # Update with O(lg N) (Normal segment tree without lazy update will take O(Nlg N) for each update)
+    def update(self, idx, l, r, a, b, val): # Update(1, 1, N, a, b, v) for update val v to [a,b]
         if self.flag[idx] == True:
             self.st[idx] = self.lazy[idx]
             self.flag[idx] = False
@@ -51,8 +59,8 @@ class SegmentTree:
         self.st[idx] = max(self.st[self.left(idx)] , self.st[self.right(idx)])
         return True
 
-    # query with O(lg N)
-    def query(self, idx, l, r, a, b): #query(1, 1, N, a, b) for query max of [a,b]
+    # Query with O(lg N)
+    def query(self, idx, l, r, a, b): # Query(1, 1, N, a, b) for query max of [a,b]
         if self.flag[idx] == True:
             self.st[idx] = self.lazy[idx]
             self.flag[idx] = False
@@ -70,14 +78,14 @@ class SegmentTree:
         q2 = self.query(self.right(idx),mid+1,r,a,b)
         return max(q1,q2)
 
-    def showData(self):
+    def showData(self): # Display data
         showList = []
         for i in range(1,N+1):
             showList += [self.query(1, 1, self.N, i, i)]
         print (showList)
             
 
-if __name__ == '__main__':
+if __name__ == '__main__': # Main for testing code
     A = [1,2,-4,7,3,-5,6,11,-20,9,14,15,5,2,-8]
     N = 15
     segt = SegmentTree(N)
