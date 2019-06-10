@@ -88,6 +88,8 @@ Send email: <jaewan7599@skku.edu>
 12. [segment tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/fenwick_tree.py)
 13. [lazy_segment_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/lazy_segment_tree.py)
 14. [fenwick_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/fenwick_tree.py)
+15. [is_Palindrome.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/is_Palindrome.py)
+16. [doubly_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/doubly_linked_list.py)
 
 
 ## Contributing Member
