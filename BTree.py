@@ -236,5 +236,31 @@ class BTree(object):
 		cur_node.keys[0] = parentNode.keys[parentIdx-1]
 		parentNode.keys[parentIdx-1] = leftSib.keys[len(leftSib.keys) - 1]
 		
+	def _merge(cur_node):
+		parentNode = cur_node.parent
+		parentIndex = 0
+		
+		while parentNode.child[parentIndex] != cur_node:
+			parentIndex += 1
+		
+		rightSib = parentNode.child[parentIndex + 1]
+		
+		cur_node.keys[len(cur_node.keys)] = parentNode.keys[parentIndex]
+		fromParentIndex = len(present.keys)
+		
+		for i in range(len(rightSib.keys)):
+			cur_node.keys[len(cur_node) + 1 + i] = rightSib.keys[i]
+		
+		if not cur_node.leaf:
+			for i in range(len(rightSib.keys)):
+				cur_node.child[len(cur_node) + 1 + i] = rightSib.child[i]
+				cur_node.child[len(cur_node) + 1 + i] = cur_node
+			
+		i = parentIndex + 1
+		while i < len(parentNode.keys):
+			parentNode.child[i] = parentNode.child[i + 1]
+			parentNdoe.keys[i-1] = parentNode.keys[i]
+			
+		return cur_node
 		
 	
