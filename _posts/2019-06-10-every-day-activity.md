@@ -1,3 +1,16 @@
+---
+layout: post
+title:	"Every Day Activity"
+date:	2019-06-10
+excerpt: "Contribute logs of all Contributors"
+tag:
+- python
+- algorithm
+- skku
+- oss
+comments: true
+---
+
 ## **Every Day Activity**
 
 **2019, May 28**<br>
