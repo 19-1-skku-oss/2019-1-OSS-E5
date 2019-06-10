@@ -25,11 +25,11 @@ These implementations are for demonstration and educational purposes. Almost par
 
 ## Our Project & Activity
 Improve original project by :
-1. Make new algorithm files.
-2. Korean explanation for py file.
+1. Implement new algorithm codes(files).
+2. Korean explanation for implemented codes.
 3. Organize folders.
-4. Add function for py file.
-5. Add comments in py file to help understand code better.
+4. Add function for implementing codes.
+5. Add comments at codes to help understand code better.
 6. Korean README file in each algorithm file.
 
 프로젝트 마일스톤 : [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
