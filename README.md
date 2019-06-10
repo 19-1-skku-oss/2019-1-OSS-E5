@@ -28,11 +28,8 @@ Improve original project by sequences below:
 1. Find new data structures or algorithm that are meaningful to educate, but didn't exist that original project.
 2. Search to get definition and actions of upper one.
 3. Get implementation with considering definition and actions.
-2. Korean explanation for implemented codes.
-3. Organize folders.
-4. Add function for implementing codes.
-5. Add comments at codes to help understand code better.
-6. Korean README file in each algorithm file.
+4. Make comments for implemented codes with Korean and English both.
+5. Make README.md for description of our implementations.
 
 프로젝트 마일스톤 : [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 
