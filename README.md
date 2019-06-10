@@ -136,7 +136,7 @@ We need addtional code and variaty of algorithms :
 **Fixing Code** <br>
 If there are some erros in original files,
 - Explain the errors
-- Fix them
+- Fix
 - Check
 
 
