@@ -1,44 +1,56 @@
+'''
+Singly linked list is basic form or linked list.
+Which consist of :
+[data/nextnode-]-->[data/nextnode-]-->[data/nextnode]
+
+Study singly linked list first, also undertanding this will give you firtst step to learn data structure.
+'''
+
 from __future__ import print_function
 
 
-class Node:  # create a Node
+class Node:  # Create a Node
     def __init__(self, data):
-        self.data = data  # given data
-        self.next = None  # given next to None
+        self.data = data  # Given data
+        self.next = None  # Given next to None
 
 
-class Linked_List:
+class Linked_List: # Linked list structure
     def __init__(self):
         self.Head = None    # Initialize Head to None
         
-    def insert_tail(self, data):
+    def insert_tail(self, data): # Insert at tail
         if(self.Head is None): self.insert_head(data)    #If this is first node, call insert_head
         else:
             temp = self.Head
-            while(temp.next != None):    #traverse to last node
+            while(temp.next != None):    #Traverse to last node
                 temp = temp.next
-            temp.next = Node(data)    #create node & link to tail
+            temp.next = Node(data)    #Create node & link to tail
 
-    def insert_head(self, data):
-        newNod = Node(data)    # create a new node
+    def insert_head(self, data): # Insert at head
+        newNod = Node(data)    # Create a new node
         if self.Head != None:
-            newNod.next = self.Head     # link newNode to head
-        self.Head = newNod    # make NewNode as Head
+            newNod.next = self.Head     # Link newNode to head
+        self.Head = newNod    # Make NewNode as Head
 
-    def printList(self):  # print every node data
-        tamp = self.Head
+    def printList(self):  # Print every node data
+        if self == None:
+		return print("None")
+	tamp = self.Head
+	print(tamp.data,end=" ")
         while tamp is not None:
-            print(tamp.data)
+            print("-->",tamp.data,end=" ")
             tamp = tamp.next
+	print()
 
-    def delete_head(self):  # delete from head
+    def delete_head(self):  # Delete from head
         temp = self.Head
         if self.Head != None:
             self.Head = self.Head.next
             temp.next = None
         return temp
         
-    def delete_tail(self):  # delete from tail
+    def delete_tail(self):  # Delete from tail
         tamp = self.Head
         if self.Head != None:
             if(self.Head.next is None):    # if Head is the only Node in the Linked List
@@ -49,10 +61,10 @@ class Linked_List:
                 tamp.next, tamp = None, tamp.next    #(2nd last element).next = None and tamp = last element 
         return tamp
 
-    def isEmpty(self):
+    def isEmpty(self): # True if empty
         return self.Head is None  # Return if Head is none
 
-    def reverse(self):
+    def reverse(self): # Make list go backward
         prev = None
         current = self.Head
 
@@ -70,7 +82,7 @@ class Linked_List:
 
 def main():
     A = Linked_List()
-    print("Inserting 1st at Head")
+    print("Inserting 1st at Head")re
     a1=input()
     A.insert_head(a1)
     print("Inserting 2nd at Head")
