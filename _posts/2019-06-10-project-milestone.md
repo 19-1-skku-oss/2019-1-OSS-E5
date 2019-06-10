@@ -1,5 +1,5 @@
 ---
-layout:	project
+layout:	post
 title:	"Project Milestone"
 date:	2019-06-10
 excerpt: "Outline of Our Project"
