@@ -95,7 +95,7 @@ Send email: <jaewan7599@skku.edu>
 - Git ID: jaewan7599 <br>
 - Student ID : 2017312554 <br>
 - Email Adreess : jaewan7599@skku.edu <br>
-- Role : Team Leader, <br>
+- Role : Team Leader, Implement BTree data structure<br>
 
 **김지영(JiYoung Kim)** 
 - Git ID: pltlover <br>
@@ -107,13 +107,13 @@ Send email: <jaewan7599@skku.edu>
 - Git ID: nicholas369 <br>
 - Student ID : 2015311988 <br>
 - Email Adreess : nicholas369@naver.com <br>
-- Role : Static page, Edit and add file to datastructure <br>
+- Role : Static page, Edit and add files to data structure <br>
 
 **배상준(SangJun Pae)** 
 - Git ID: jun-honey <br>
 - Student ID : 2018310364 <br>
 - Email Adreess : psj97047@naver.com <br>
-- Role : Data structure, Edit and add file to datastructure, Description of topic <br>
+- Role : Data structure, Edit and add files to data structure, Description of topic <br>
 
 ## How to Contribute
 
