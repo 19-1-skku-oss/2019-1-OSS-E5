@@ -121,6 +121,7 @@ Send email: <jaewan7599@skku.edu>
 - lots of files are only written in English. <br>
 So anybody can contribute by translating py code English to korean. <br>
 We need a lot of help in this area.
+We are looking forward to contribute for helping Korean educator who teaches basis of CS!
 
 **Adding Code** <br>
 We need addtional code and variaty of algorithms :
