@@ -1,20 +1,41 @@
-from __future__ import print_function
-import math
+'''
+Segment tree is fast at finding interval sum.
+Parents node have integrated data of child nodes
+So its time complexity of getting sum of interval or editing is O(log n)
+which is way faster than basic binary tree.
+Because of is fast speed, studying about segment tree is one of the essential part of studing datastructure.
+'''
 
-class SegmentTree:
+from __future__ import print_function
+import math # Get math library
+
+'''
+Storing tree in array
+:
+      3
+    /  \
+  1     5   == [3,1,5,0,2,None,6]
+ / \   / \
+0   2 X   6
+
+
+'''
+
+
+class SegmentTree: # Use array to store tree
     
     def __init__(self, A):
         self.N = len(A)
         self.st = [0] * (4 * self.N) # approximate the overall size of segment tree with array N
         self.build(1, 0, self.N - 1)
         
-    def left(self, idx):
+    def left(self, idx):  # Jump to left index 
         return idx * 2
 
-    def right(self, idx):
+    def right(self, idx): # Jump to right index
         return idx * 2 + 1
 
-    def build(self, idx, l, r):
+    def build(self, idx, l, r):# Build segment tree 
         if l == r:
             self.st[idx] = A[l]
         else:
@@ -51,14 +72,14 @@ class SegmentTree:
         q2 = self.query_recursive(self.right(idx), mid + 1, r, a, b)
         return max(q1, q2)
 
-    def showData(self):
+    def showData(self): # Display
         showList = []
         for i in range(1,N+1):
             showList += [self.query(i, i)]
         print (showList)
             
 
-if __name__ == '__main__':
+if __name__ == '__main__': # Main for testing
     A = [1,2,-4,7,3,-5,6,11,-20,9,14,15,5,2,-8]
     N = 15
     segt = SegmentTree(A)
