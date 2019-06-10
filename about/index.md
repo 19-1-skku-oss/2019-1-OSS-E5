@@ -17,7 +17,7 @@ These implementations are for demonstration and educational purposes. Almost par
 
 [Original project Link](https://github.com/TheAlgorithms/Python)
 
-=======
+- - -
 
 ## Our Project & Activity
 Improve original project by :
@@ -28,13 +28,13 @@ Improve original project by :
 5. Add comments in py file to help understand code better.
 6. Korean README file in each algorithm file.
 
-=======
+- - -
 
 ## Link to Wiki Page
 For more detail about project: <br>
 [2019-1-OSS-E5 Wiki page](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
 
-=======
+- - -
 
 ## Contributing Member
 개인정보 조회 링크 : [Link To Member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)<br>
@@ -44,26 +44,26 @@ For more detail about project: <br>
 - Student ID : 2017312554 <br>
 - Email Adreess : jaewan7599@skku.edu <br>
 - Role : Team Leader, <br>
--------
+
 **김지영(JiYoung Kim)** 
 - Git ID: pltlover <br>
 - Student ID : 2018313475 <br>
 - Email Adreess : pitlover@naver.com <br>
 - Role : Edit and add file to Maths <br>
--------
+
 **임성근(Sunggeun Lim)** 
 - Git ID: nicholas369 <br>
 - Student ID : 2015311988 <br>
 - Email Adreess : nicholas369@naver.com <br>
 - Role : Static page, Edit and add file to datastructure <br>
--------
+
 **배상준(SangJun Pae)** 
 - Git ID: jun-honey <br>
 - Student ID : 2018310364 <br>
 - Email Adreess : psj97047@naver.com <br>
 - Role : Data structure, Edit and add file to datastructure, Description of topic <br>
 
-=======
+- - -
 
 ## How to Contribute
 
