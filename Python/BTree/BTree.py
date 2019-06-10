@@ -1,9 +1,23 @@
 class BTreeNode(object):
 	def __init__(self, degree, leaf):
+		#leaf is boolean variable that means cur_node is leaf or not
+		#현 node가 leaf인지 아닌지에 대한 변수
 		self.leaf = leaf
-		self.keys = []
+
+		#keys that cur_node has
+		#현 node가 가지는 keys
+ 		self.keys = []
+		
+		#childs that cur_node has
+		#현 node가 가지는 childs
 		self.childs = []
+
+		#parent of cur_node
+		#현 node의 parent
 		self.parent = None
+
+		#degree of BTree
+		#BTree의 degree
 		self.degree = degree
 
 class BTree(object):
