@@ -213,5 +213,28 @@ class BTree(object):
 				
 		for i in range(len(rightSib.keys)):
 			rightSib.keys[i-1] = rightSib.keys[i]
+	
+	def _borrowFromLeft(cur_node, parentIdx):
+		parentNode = cur_node.parent
+		
+		i = len(cur_node.keys) - 1
+		while i > 0:
+			cur_node.keys[i] = cur_node.keys[i-1]
+			i--
+		leftSib = parentNode.child[parentIdx - 1]
+		
+		if not cur_node.leaf:
+			i = len(cur_node.keys)
+			while i > 0:
+				cur_node.child[i] = cur_node.child[i-1]
+				i--
 			
+			cur_node.child[0] = leftSib.child[len(leftSib.keys)]
+			leftSib.child[len(leftSib.keys)] = None
+			cur_node.child[0].parent = cur_node
+		
+		cur_node.keys[0] = parentNode.keys[parentIdx-1]
+		parentNode.keys[parentIdx-1] = leftSib.keys[len(leftSib.keys) - 1]
+		
+		
 	
