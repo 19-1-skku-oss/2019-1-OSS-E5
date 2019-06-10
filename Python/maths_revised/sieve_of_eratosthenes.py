@@ -18,23 +18,15 @@ Ex) 120까지의 소수를 구하려면, 11^2>120 이므로 11보다 작은 수�
 import math
 n = int(input("Enter n: "))
 
-def sieve(n):
-    l = [True] * (n+1)
-    prime = []
-    start = 2
-    end   = int(math.sqrt(n))
-    while(start <= end):
-        if l[start] == True:
-            prime.append(start)
-            for i in range(start*start, n+1, start):
-                if l[i] == True:
-                    l[i] = False
-        start += 1
-    
-    for j in range(end+1,n+1):
-        if l[j] == True:
-            prime.append(j)
-    
-    return prime
+def sieve_of_eratosthenese(n):
+	prime = [True for i in range(n+1)]
+	p = 2
+	while(p*p <= n):
+		for i in range(p * 2, n+1, p):
+			prime[i] = False
 
-print(sieve(n))
+	p+=1
+
+	for p in range(2,n):
+		if prime[p]:
+			print p
