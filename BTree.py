@@ -195,4 +195,23 @@ class BTree(object):
 				elif parentIndex==0:
 					next = _merge(cur_node)
 					_balancingAfterDel(next.parent)
-					
+	
+	def _borrowFromRight(cur_node, parentIdx):
+		parentNode = cur_node.parent
+		
+		rightSib = parentNode.child[parentIdx + 1]
+		present->keys[len(cur_node.keys) - 1] = parentNode.keys[parentIdx]
+		parentNode.keys[parentIdx] = rightSib.keys[0]
+		
+		
+		if not cur_node.leaf:
+			cur_node.child[len(present.keys)] = rightSib.child[0]
+			cur_node.child[len(present.keys)] = cur_node
+			
+			for i in range(len(rightSib.keys) + 1):
+				rightSib.child[i-1] = rightSib.child[i]
+				
+		for i in range(len(rightSib.keys)):
+			rightSib.keys[i-1] = rightSib.keys[i]
+			
+	
