@@ -174,4 +174,25 @@ class BTree(object):
 		
 		return None
 		
+	def _balancingAfterDel(self, cur_node):
+		minKeys = (degree+2)/2 - 1
+		parentIndex = 0
 		
+		if len(cur_node.keys) < minKeys:
+			if not cur_node.parent:
+				if len(cur_node.keys) == 0:
+					self.root = cur_node.child[0]
+					if self.root:
+						self.root.parent = None
+			else:
+				parent = cur_node.parent
+				while parent.child[parentIndex] != cur_node:
+					parentIndex += 1
+				if parentIndex > 0 && len(parent.child[parentIndex-1].keys) > minKeys:
+					_borrowFromLeft(cur_node, parentIndex)
+				elif parentIndex < len(parent.keys) and len(parent.child[parentIndex+1].keys) > minKeys:
+					_borrowFromRight(cur_node, parentIndex)
+				elif parentIndex==0:
+					next = _merge(cur_node)
+					_balancingAfterDel(next.parent)
+					
