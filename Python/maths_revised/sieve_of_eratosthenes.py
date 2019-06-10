@@ -15,26 +15,12 @@ Ex) 120까지의 소수를 구하려면, 11^2>120 이므로 11보다 작은 수�
 
 '''
 
-import math
-n = int(input("Enter n: "))
+def sieve_of_eratosthenes(n):
+	numbers = range(2, n)
+	while len(numbers) > 0:
+		numbers = [num for num in numbers if num % numbers[0] != 0 or num == numbers[0]]
+	yield numbers[0]
+	numbers = numbers[1:]
 
-def sieve(n):
-    l = [True] * (n+1)
-    prime = []
-    start = 2
-    end   = int(math.sqrt(n))
-    while(start <= end):
-        if l[start] == True:
-            prime.append(start)
-            for i in range(start*start, n+1, start):
-                if l[i] == True:
-                    l[i] = False
-        start += 1
-    
-    for j in range(end+1,n+1):
-        if l[j] == True:
-            prime.append(j)
-    
-    return prime
-
-print(sieve(n))
+num = input()
+print(sieve_of_eratosthenes(num))
