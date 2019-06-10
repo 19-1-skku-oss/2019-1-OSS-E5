@@ -105,7 +105,7 @@ Send email: <jaewan7599@skku.edu>
 - Git ID: pltlover <br>
 - Student ID : 2018313475 <br>
 - Email Adreess : pitlover@naver.com <br>
-- Role : Edit and add file to Maths <br>
+- Role : Add Korean comments, Fix some erros, edit and add file to Maths <br>
 
 **임성근(Sunggeun Lim)** 
 - Git ID: nicholas369 <br>
@@ -131,6 +131,14 @@ We need addtional code and variaty of algorithms :
 - Add algorithm
 - Add function
 - Delete unneeded file
+
+
+**Fixing Code** <br>
+If there are some erros in original files,
+- Explain the errors
+- Fix them
+- Check
+
 
 **Explaning algorithms** <br>
 There are too little explanations for beginners. So you can contribute by :
