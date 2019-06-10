@@ -27,7 +27,10 @@ class BTree(object):
 			traverse(cur_node.childs[len(cur_node.keys)]
 
 	def search(self, key):
-		return len(self.root.keys)==0?None:_search(self.root, key)
+		if len(self.root.keys) == 0:
+			return None
+		else:
+			return _search(self.root, key)
 
 	def _search(cur_node, key):
 		i=0
@@ -59,7 +62,7 @@ class BTree(object):
 
 		if cur_node.leaf:
 			while i>0 and cur_node.keys[i-1] > key:
-				cur_node.keys[i] = cur_node->keys[i-1]
+				cur_node.keys[i] = cur_node.keys[i-1]
 				i -= 1
 
 			cur_node.keys[i] = key
@@ -188,11 +191,79 @@ class BTree(object):
 				parent = cur_node.parent
 				while parent.child[parentIndex] != cur_node:
 					parentIndex += 1
-				if parentIndex > 0 && len(parent.child[parentIndex-1].keys) > minKeys:
+				if parentIndex > 0 and len(parent.child[parentIndex-1].keys) > minKeys:
 					_borrowFromLeft(cur_node, parentIndex)
 				elif parentIndex < len(parent.keys) and len(parent.child[parentIndex+1].keys) > minKeys:
 					_borrowFromRight(cur_node, parentIndex)
 				elif parentIndex==0:
 					next = _merge(cur_node)
 					_balancingAfterDel(next.parent)
-					
+	
+	def _borrowFromRight(cur_node, parentIdx):
+		parentNode = cur_node.parent
+		
+		rightSib = parentNode.child[parentIdx + 1]
+		present->keys[len(cur_node.keys) - 1] = parentNode.keys[parentIdx]
+		parentNode.keys[parentIdx] = rightSib.keys[0]
+		
+		
+		if not cur_node.leaf:
+			cur_node.child[len(present.keys)] = rightSib.child[0]
+			cur_node.child[len(present.keys)] = cur_node
+			
+			for i in range(len(rightSib.keys) + 1):
+				rightSib.child[i-1] = rightSib.child[i]
+				
+		for i in range(len(rightSib.keys)):
+			rightSib.keys[i-1] = rightSib.keys[i]
+	
+	def _borrowFromLeft(cur_node, parentIdx):
+		parentNode = cur_node.parent
+		
+		i = len(cur_node.keys) - 1
+		while i > 0:
+			cur_node.keys[i] = cur_node.keys[i-1]
+			i--
+		leftSib = parentNode.child[parentIdx - 1]
+		
+		if not cur_node.leaf:
+			i = len(cur_node.keys)
+			while i > 0:
+				cur_node.child[i] = cur_node.child[i-1]
+				i--
+			
+			cur_node.child[0] = leftSib.child[len(leftSib.keys)]
+			leftSib.child[len(leftSib.keys)] = None
+			cur_node.child[0].parent = cur_node
+		
+		cur_node.keys[0] = parentNode.keys[parentIdx-1]
+		parentNode.keys[parentIdx-1] = leftSib.keys[len(leftSib.keys) - 1]
+		
+	def _merge(cur_node):
+		parentNode = cur_node.parent
+		parentIndex = 0
+		
+		while parentNode.child[parentIndex] != cur_node:
+			parentIndex += 1
+		
+		rightSib = parentNode.child[parentIndex + 1]
+		
+		cur_node.keys[len(cur_node.keys)] = parentNode.keys[parentIndex]
+		fromParentIndex = len(present.keys)
+		
+		for i in range(len(rightSib.keys)):
+			cur_node.keys[len(cur_node) + 1 + i] = rightSib.keys[i]
+		
+		if not cur_node.leaf:
+			for i in range(len(rightSib.keys)):
+				cur_node.child[len(cur_node) + 1 + i] = rightSib.child[i]
+				cur_node.child[len(cur_node) + 1 + i] = cur_node
+			
+		i = parentIndex + 1
+		while i < len(parentNode.keys):
+			parentNode.child[i] = parentNode.child[i + 1]
+			parentNdoe.keys[i-1] = parentNode.keys[i]
+			
+		return cur_node
+		
+	
