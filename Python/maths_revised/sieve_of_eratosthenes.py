@@ -16,14 +16,11 @@ Ex) 120까지의 소수를 구하려면, 11^2>120 이므로 11보다 작은 수�
 '''
 
 def sieve_of_eratosthenes(n):
-	list = []
-	for i in range(2, n+1):
-		if i not in list:
-			print(i)
-			for j in range(i*i, n+1, i):
-				list.append(j)
-
-
+	numbers = range(2, n)
+	while len(numbers) > 0:
+		numbers = [num for num in numbers if num % numbers[0] != 0 or num == numbers[0]]
+	yield numbers[0]
+	numbers = numbers[1:]
 
 num = input()
 print(sieve_of_eratosthenes(num))
