@@ -27,7 +27,10 @@ class BTree(object):
 			traverse(cur_node.childs[len(cur_node.keys)]
 
 	def search(self, key):
-		return len(self.root.keys)==0?None:_search(self.root, key)
+		if len(self.root.keys) == 0:
+			return None
+		else:
+			return _search(self.root, key)
 
 	def _search(cur_node, key):
 		i=0
@@ -59,7 +62,7 @@ class BTree(object):
 
 		if cur_node.leaf:
 			while i>0 and cur_node.keys[i-1] > key:
-				cur_node.keys[i] = cur_node->keys[i-1]
+				cur_node.keys[i] = cur_node.keys[i-1]
 				i -= 1
 
 			cur_node.keys[i] = key
@@ -188,7 +191,7 @@ class BTree(object):
 				parent = cur_node.parent
 				while parent.child[parentIndex] != cur_node:
 					parentIndex += 1
-				if parentIndex > 0 && len(parent.child[parentIndex-1].keys) > minKeys:
+				if parentIndex > 0 and len(parent.child[parentIndex-1].keys) > minKeys:
 					_borrowFromLeft(cur_node, parentIndex)
 				elif parentIndex < len(parent.keys) and len(parent.child[parentIndex+1].keys) > minKeys:
 					_borrowFromRight(cur_node, parentIndex)
