@@ -15,7 +15,7 @@ For more detail about project: <br>
 All Algorithms implemented in python
 
 
-These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
+These implementations are for demonstration and educational purposes. Almost parts of project are consisted with Data structures, sorting algorithms, search algorithms, etc. They are less efficient than the implementations in the Python standard library.
 
 
 [Original project Link](https://github.com/TheAlgorithms/Python)
