@@ -77,14 +77,16 @@ Send email: <jaewan7599@skku.edu>
 2. [basic_binary_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/basic_binary_tree.py)
 3. [binary_search_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/binary_search_tree.py)
 4. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md)
-5. [wiki: Project member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)
-6. [wiki: Every Day Activity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity)
+5. [Wiki: Project member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)
+6. [Wiki: Every Day Activity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity)
 7. [Wiki Home](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
 8. [Wiki Project Milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 9. [How to Contribute.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/CONTRIBUTING.md)
 10. [AVLtree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graphs%20%26%20tree/binary%20tree/AVLtree.py)
 11. [family tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/family%20tree.py)
-
+12. [segment tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/fenwick_tree.py)
+13. [lazy_segment_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/lazy_segment_tree.py)
+14. [fenwick_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/fenwick_tree.py)
 
 
 ## Contributing Member
