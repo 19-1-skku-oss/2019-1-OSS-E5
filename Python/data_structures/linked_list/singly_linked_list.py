@@ -80,7 +80,7 @@ class Linked_List: # Linked list structure
         # Return prev in order to put the head at the end
         self.Head = prev
 
-def main():
+def main(): # Main for test
     A = Linked_List()
     print("Inserting 1st at Head")re
     a1=input()
