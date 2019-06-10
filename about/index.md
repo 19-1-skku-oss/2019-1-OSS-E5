@@ -2,11 +2,34 @@
 layout: page
 title: About 2019-1-OSS-E5
 tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+date: 2019-06-10
 comments: false
 ---
     
 <center><a href="http://19-1-skku-oss.github.io/2019-1-OSS-E5/"><b>2019-1-OSS-E5</b></a> Our work is related with making helpful python algorithm for educator. If you have any question, please send email to jaewan7599@skku.edu.</center>
+
+## About Original Project
+All Algorithms implemented in python
+
+
+These implementations are for demonstration and educational purposes. Almost parts of project are consisted with Data structures, sorting algorithms, search algorithms, etc. They are less efficient than the implementations in the Python standard library.
+
+
+[Original project Link](https://github.com/TheAlgorithms/Python)
+
+
+## Our Project & Activity
+Improve original project by :
+1. Make new algorithm files.
+2. Korean explanation for py file.
+3. Organize folders.
+4. Add function for py file.
+5. Add comments in py file to help understand code better.
+6. Korean README file in each algorithm file.
+
+## Link to Wiki Page
+For more detail about project: <br>
+[2019-1-OSS-E5 Wiki page](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
 
 ## Contributing Member
 개인정보 조회 링크 : [Link To Member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)<br>
