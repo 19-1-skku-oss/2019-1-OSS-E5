@@ -46,7 +46,7 @@ Send email: <jaewan7599@skku.edu>
 **임성근**<br>
 `Worker` : 임성근 (Sunggeun Lim, <nicholas369@naver.com>)
 1. [queue](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue)
-2. [stack](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/stack)
+2. [stack](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/stacks)
 
 **김지영**<br>
 `Worker` : 김지영 (JiYoung Kim, <pitlover@naver.com>)
