@@ -1,3 +1,10 @@
+'''
+Circular linked list is circular type linked list.
+which in this case track form tail.
+One of the great thing that is better than simple linked list is it can access all element by roltating.
+ALso it is easy to put element at front or tail or detlete front or tail(Reason :Track from tail).
+'''
+
 class CList:
     class Node:
         def __init__(self, item,nexts): # Make Node : item for storage, next linking next node 
