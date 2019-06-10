@@ -1,10 +1,6 @@
 # Maths 
+학생들에게 보다 편리한 수학적 알고리즘을 소개한다. 
+단순 코드만 제공하는 것이 아니라, 수학적 원리와 적용 방식, 공식 등을 유도하여 
+보다 더 높은 수준의 이해를 할 수 있도록 한다. 
 
-
-## About Our Team
-Last updated: 2019-06-07
-
-
-## Link to Wiki Page
-For more detail about project: <br>
-[2019-1-OSS-E5 Wiki page](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
+# 세부 항목들 
