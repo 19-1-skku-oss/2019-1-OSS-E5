@@ -69,6 +69,7 @@ Send email: <jaewan7599@skku.edu>
 17. [find_lcm.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_lcm.py)
 18. [find_gcd.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/find_gcd.py)
 19. [newton_raphson.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/tree/master/Python/maths)
+20. [sieve_of_eratosthenes.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/sieve_of_eratosthenes.py)
 
 
 **배상준**<br>
