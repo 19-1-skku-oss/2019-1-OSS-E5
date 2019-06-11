@@ -33,7 +33,7 @@ Improve original project by sequences below:
 
 프로젝트 마일스톤 : [Link to project milestone](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-Milestone)
 
-if you have question?
+If you have question?
 Send email: <jaewan7599@skku.edu>
 
 ## Link to Our Work Code
