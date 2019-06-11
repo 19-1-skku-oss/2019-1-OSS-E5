@@ -14,8 +14,12 @@ Source : [네이버 지식백과](https://terms.naver.com/entry.nhn?docId=840166
 
 **이진트리**
 <br>
-이진트리는 자식노드가 두개 이하인것을 말하며, 완전 이진트리는 자식노드가 2개아니면 0개인 트리이다. 이진트리는 데이터를 반으로 쪼개어 트리형식으로 저장한다는 점에서 다양한 형태로 활용되고 있다.
+이진트리는 자식노드가 두개 이하인것을 말하며, 완전 이진트리는 자식노드가 2개아니면 0개인 트리이고, 포화 이진트리는 빈 노드 없이 모든노드의 자식노드 수가 2인 트리를 말한다. 이진트리는 데이터를 반으로 쪼개어 트리형식으로 저장한다는 점에서 다양한 형태로 활용되고 있다.
 세부적인 내용은 [binary tree 폴더안 README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/README.md) 를 읽기를 바란다.
+
+![일반 이진트리](http://blogfiles.naver.net/20141020_27/ktmgame_1413800669972Q5et3_JPEG/%B0%D4%C0%D3%C7%C1%B7%CE%B1%D7%B7%A1%B9%D6.jpg)
+<br>
+<일반적인 이진트리>
 
 **트라이(Trie)**
 <br>
@@ -25,7 +29,7 @@ Source : [네이버 지식백과](https://terms.naver.com/entry.nhn?docId=840166
 [CAR,CARD,DESK,DESKTOP,DOOR] 를 담는 트라이 자료구조를 예로들면 아래 그림처럼 나타난다.
 
 ![TRIE 그림](https://cdn-images-1.medium.com/max/800/1*objieo3WOHHKcR8sa7_iqA.png)
+
+<트라이(Trie) 그림>
 <br>
-
-
 자세한 내용은 [Trie.py 설명 링크](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/trie/README.md)를 사용하길 바란다.
