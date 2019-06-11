@@ -21,9 +21,8 @@ What, if anything, the B stands for has never been established.<br> <br>
 1. Every node has at most m children (m: B-tree of order).
 2. Every non-leaf node (except root) has at least ⌈m/2⌉ children.
 3. A non-leaf node with k children contains k−1 keys.
-4. All leaves appear in the same level
-
-***Properties*** <br>
+4. All leaves appear in the same level<br><br>
+***Properties***
 Time complexity in big O notation <br>
 
 Algorithm | Average | Worst case
