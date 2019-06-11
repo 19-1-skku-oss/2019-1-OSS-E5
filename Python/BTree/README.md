@@ -53,14 +53,30 @@ BTreeNode는 BTree의 기본 구성 요소입니다. BTreeNode는 keys, childs, 
 3. function traverse<br>
 traverse function은 Inorder 방식으로 BTree를 traverse하는 function입니다. Inorder traverse에 관한 정보는 [링크](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)를 참고해주시기 바랍니다.<br><br>
 
+---
+
 4. function search<br>
 search function은 BTree 내에 찾고자하는 key를 가지는 node가 존재할 경우, 그 node를 return합니다. search 방식은 binary search 방식을 이용해 구현되었습니다.<br><br>
+
+---
 
 5. function insertElement<br>
 insertElement function은 BTree의 정의를 만족하는 위치에 key를 삽입하는 function입니다. insert를 수행하고 난 뒤에는, balancing function을 통해 BTree의 정의를 만족하도록 Tree를 재구성합니다.<br><br>
 
-6. function balancing<br>
-balnancing function은 
+--- 
+
+6. function balancing, splitChild<br>
+balancing, splitChild function은 insertElement function의 단순히 element를 삽입하는 시행 다음에 시행되며, BTree의 정의에 따라 node를 최적화된 위치로 재배치시키는 역할을 수행합니다.
+
+---
+
+7. function remove<br>
+remove function은 BTree에 존재하는 element를 삭제할 때 사용하는 function입니다. remove를 수행하고 난 뒤에는, balancingAfterDel을 통해 BTree의 정의를 만족하도록 Tree를 재구성합니다.<br><br>
+
+---
+
+8. function balancingAfterDel, borrowFromLeft, borrowFromRight, merge<br>
+balancingAfterDel, borrowFromLeft, borrowFromRight, merge function은 remove를 통해 key를 제거한 뒤 시행되며, BTree의 정의에 따라 node를 최적화된 위치로 재배치시키는 역할을 수행합니다.
 
 #### Properties ####
 Time complexity in big O notation <br>
