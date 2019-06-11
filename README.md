@@ -7,9 +7,9 @@ Last updated: 2019-06-11
 
 
 ## Link to Wiki Page
-For more detail about project: <br>
+You can find more detail about project: <br>
 [2019-1-OSS-E5 Wiki page](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki)
-  
+It includes 1. **Project member information** 2. **Project Milestone** 3. **Every Day Activity**
 
 ## About Original Project
 All Algorithms implemented in python
