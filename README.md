@@ -92,7 +92,11 @@ Send email: <jaewan7599@skku.edu>
 16. [doubly_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/doubly_linked_list.py)
 17. [swapNodes.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/swapNodes.py)
 18. [singly_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/singly_linked_list.py)
-
+19. [trie.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/trie.py)
+20. [data_structures/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/README.md)
+21. [data_structures/graph/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graph/README.md)
+22. [data_structures/tree/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/README.md)
+23. [data_structures/tree/binary%20tree/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/README.md)
 
 ## Contributing Member
 개인정보 조회 링크 : [Link To Member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)<br>
