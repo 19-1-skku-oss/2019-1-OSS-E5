@@ -67,16 +67,24 @@ For more detail about project: <br>
 
 ## How to Contribute
 
-**Korean Translation**<br>
+**Korean Translation(Description)**<br>
 - lots of files are only written in English. <br>
 So anybody can contribute by translating py code English to korean. <br>
-We need a lot of help in this area.
+- We are looking forward to contribute for helping Korean educator who teaches basis of CS!
 
 **Adding Code** <br>
 We need addtional code and variaty of algorithms :
 - Add algorithm
 - Add function
 - Delete unneeded file
+
+
+**Fixing Code** <br>
+If there are some erros in original files,
+- Explain the errors
+- Fix
+- Check
+
 
 **Explaning algorithms** <br>
 There are too little explanations for beginners. So you can contribute by :
