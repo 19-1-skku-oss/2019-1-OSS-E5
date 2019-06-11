@@ -13,6 +13,12 @@ comments: true
 
 ## **Every Day Activity**
 
+**2019, May 7**<br>
+---
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md) Make basic form of README.md
+
 **2019, May 28**<br>
 ---
 `jun-honey` **배상준(SangJun Pae)**<br>
@@ -29,6 +35,28 @@ comments: true
 
 1. [queue_on_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue/queue_on_list.py) 기존 get함수에서 index설정오류를 수정
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Make BTree_init function for BTree.c file
+
+**2019, May 30**<br>
+---
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add createNode function for BTree.c file
+
+2. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add search function for BTree.c file 
+
+**2019, May 31**<br>
+---
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Complete implementation for search function for BTree.c file
+
+2. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add InsertElement function for BTree.c file 
+
+3. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add balancing function for BTree.c file
+
 **2019, Jun 1**<br>
 ---
 `pitlover` **김지영(JiYoung Kim)**<br>
@@ -38,6 +66,9 @@ comments: true
 
 3. [FindMIN.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMin.py) 함수 가독성을 위해 함수 return 값을 바꾸고, 메인함수에 print 추가 및 코드 설명 주석 추가
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Complete implementation for InsertElement function by adding _insert function for BTree.c file
 
 **2019, Jun 2**<br>
 ---
@@ -46,6 +77,9 @@ comments: true
 
 2. 그 외 다른 [3n+1.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/3n%2B1.py), [FindMax.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMax.py), [FindMIN.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/FindMin.py) 등 기존 작업 수정 및 완료. 
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Complete implementation of splitChild function for BTree.c file
 
 **2019, Jun 3**<br>
 ---
@@ -60,6 +94,12 @@ comments: true
 
 2. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md) README파일에 우선순위 큐 구현사항 입력
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Complete implementation of removeElement function for BTree.c file
+
+2. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md) Update README.md
+
 **2019, Jun 4**<br>
 ---
 `jun-honey` **배상준(SangJun Pae)**<br>
@@ -70,8 +110,17 @@ comments: true
 
 2. [average.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/average.py) 보다 이해도를 높이기 위해 학생들이 알기 쉬운 변수이름으로 수정, 함수 return value 값 수정 및 한국어 설명 추가.
  
-2. [factorial_Phyton.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_python.py) 팩토리얼 구하는 함수를 구현(일반적인 버전)
+3. [factorial_Phyton.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/factorial_python.py) 팩토리얼 구하는 함수를 구현(일반적인 버전)
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add balancingAfterDel function for implementation of removeElement function of BTree.c file
+
+2. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add borrowFromRight function for implementation of balancingAfterDel function of BTree.c file
+
+3. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add borrowFromLeft function for implementation of balancingAfterDel function of BTree.c file
+
+4. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Complete implementation of balancingAfterDel function for implementation of removeElement function of BTree.c file
 
 **2019, Jun 5**<br>
 ---
@@ -89,6 +138,17 @@ comments: true
 
 5. [simpson_rule.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/simpson_rule.py) 학생들에게 생소한 simpson  rule에 대한 이론적인 설명 추가 및 한국어 주석 추가. (수학적 이론 부분)
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Complete implementation of merge function for BTree.c
+
+2. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add getLevel function for visualization of BTree.c
+
+3. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add getNumberofNode function for visualization of BTree.c
+
+4. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add mappingNodes function for visualization of BTree.c
+
+5. [BTree.c](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.c) Add printTree function for visualization of BTree.c
 
 **2019, Jun 6**<br>
 ---
@@ -116,7 +176,6 @@ comments: true
 
 3. [Wiki Every Day Activity](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Every-Day-Activity) Make new wiki file to keep track of our activity 
 
-
 `pitlover` **김지영(JiYoung Kim)**<br>
 1. [PrimeCheck_basic.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/maths_revised/PrimeCheck_basic.py) 소수 체크하는 알고리즘의 가장 기본적인 버전 추가. + 단계적으로 조금더 나은 시간복잡도를 가지는 알고리즘으로 개선
 
@@ -134,6 +193,23 @@ comments: true
 
 3. [circular_queue.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/queue/circular_queue.py) 원형 큐 구현, 각 함수들을 설명하는 주석 입력
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate structure of BTreeNode and BTree from BTree.c to BTree.py
+
+2. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate traverse function from BTree.c to BTree.py
+
+3. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate search function from BTree.c to BTree.py
+
+4. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate insert function from BTree.c to BTree.py
+
+5. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate balancing function from BTree.c to BTree.py
+
+6. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate splitChild function from BTree.c to BTree.py
+
+7. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate removeElement function from BTree.c to BTree.py
+
+8. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Modify some bugs of BTree.py
 
 **2019, Jun 8**<br>
 ---
@@ -160,7 +236,43 @@ comments: true
 
 2. [family tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/family%20tree.py) Family tree.py 를 새로 만들어, 이진트리가 아닌 일반적이 트리에 대해 설명
 
+3. [segment tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/fenwick_tree.py) 세그먼트 트리 설명 추가 및 코드 상세 주석
+
+4. [lazy_segment_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/lazy_segment_tree.py) lazy propagation 하는 세그먼트 트리 설명 추가 및 코드 상세 주석
+
+5. [fenwick_tree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/fenwick_tree.py) fenwick tree 의 설명 및 코드 상세 주석
+
 `nicholas369` **임성근(Sunggeun Lim)**<br>
 
 1. [gh-pages](https://github.com/19-1-skku-oss/2019-1-OSS-E5/tree/gh-pages) 정적페이지 구현을 위해 gh-pages branch 설정 후, 파일들 수정
 
+`jaewan7599` **문재완(Jaewan Moon)**<br>
+
+1. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate balancingAfterDel function from BTree.c to BTree.py
+
+2. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate borrowFromLeft function from BTree.c to BTree.py
+
+3. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate borrowFromRight function from BTree.c to BTree.py
+
+4. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Translate merge function from BTree.c to BTree.py
+
+5. [README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/README.md) Update README.md
+
+6. [BTree.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/BTree/BTree.py) Modify some bugs of BTree.py
+
+**2019, Jun 11**<br>
+---
+`jun-honey` **배상준(SangJun Pae)**<br>
+
+1. [is_Palindrome.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/is_Palindrome.py) is_palindrome의 정의와 연관성에 대한 주석, 설명
+2. [doubly_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/doubly_linked_list.py) 함수 추가, 함수 수정, 메인함수, 설명추가, 예외처리
+3. [swapNodes.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/swapNodes.py) 함수 수정, 주석추가, 설명추가, 예외수정
+4. [singly_linked_list.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/singly_linked_list.py) 함수 수정, 주석추가, 설명추가
+
+5. [trie.py](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/trie.py) 폴더에 trie 자료구조 추가(설명, 코드, 메인테스트)
+6. [data_structures/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/README.md) 자료구조 폴더에 한국어 교안 완성
+7. [data_structures/graph/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graph/README.md) 그래프 폴더에 한국어 교안 완성
+8. [data_structures/tree/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/README.md) 트리 폴더에 트리 교안 완성
+9. [data_structures/tree/binary%20tree/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/README.md) 이진 트리 폴더에 이진트리 교안 완성
+10. [data_structures/linked_list/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/README.md) 연결리스트 폴더에 리스트 교안 완성
+11. [data_structures/heap/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/heap/README.md) 힙 폴더에 힙 교안 완성
