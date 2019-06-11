@@ -97,6 +97,8 @@ Send email: <jaewan7599@skku.edu>
 21. [data_structures/graph/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/graph/README.md)
 22. [data_structures/tree/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/README.md)
 23. [data_structures/tree/binary%20tree/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/tree/binary%20tree/README.md)
+24. [data_structures/linked_list/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/linked_list/README.md)
+25. [data_structures/heap/README.md](https://github.com/19-1-skku-oss/2019-1-OSS-E5/blob/master/Python/data_structures/heap/README.md)
 
 ## Contributing Member
 개인정보 조회 링크 : [Link To Member info](https://github.com/19-1-skku-oss/2019-1-OSS-E5/wiki/Project-member-information)<br>
