@@ -38,14 +38,16 @@ B-트리는 노드 접근시간이 노드에서의 연산시간에 비해 훨씬
 3. k개의 Children Nodes를 가지는 non-leaf node는 k-1개의 keys를 가진다.
 4. 모든 leaf nodes는 같은 Level에 존재해야 한다.<br><br>
 #### Implementation(function) ####
-1. class BTree
+1. class BTree<br>
 class BTree has information of degree and root node.
 ---
 class BTree는 degree와 root node에 관한 정보를 가집니다.
-2. class BTreeNode
+
+2. class BTreeNode<br>
 BTreeNode is a basic component of BTree. It is consisted with keys, childs, parent. It also has a boolean variable 'leaf' that notices it is leaf node or not.
 ---
 BTreeNode는 BTree의 기본 구성 요소입니다. BTreeNode는 keys, childs, parent에 관한 정보를 가집니다. 또한, variable 'leaf'는 현재 node가 leaf인지 아닌지를 나타내는 boolean variable 입니다.
+
 #### Properties ####
 Time complexity in big O notation <br>
 
