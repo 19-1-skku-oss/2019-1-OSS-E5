@@ -19,7 +19,8 @@ What, if anything, the B stands for has never been established.
 
 __Properties__ <br>
 Time complexity in big O notation <br>
-Algorithm		Average	Worst case <br>
+Algorithm | Average | Worst case
+--- | --- | ---
 Space		       O(n)	      O(n) <br>
 Search		 O(log n)	  O(log n) <br>
 Insert		 O(log n)	  O(log n) <br>
