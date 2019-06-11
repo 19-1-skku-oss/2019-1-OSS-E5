@@ -19,12 +19,12 @@ What, if anything, the B stands for has never been established.
 
 __Properties__ <br>
 Time complexity in big O notation <br>
-Algorithm | Average | Worst case
---- | --- | ---
-Space | O(n) | O(n)
-Search | O(log n) | O(log n)
-Insert | O(log n) | O(log n)
-Delete | O(log n) | O(log n)
+| Algorithm | Average | Worst case |
+| --- | --- | --- |
+| Space | O(n) | O(n) |
+| Search | O(log n) | O(log n) |
+| Insert | O(log n) | O(log n) |
+| Delete | O(log n) | O(log n) |
 
 ###### Source: [Wikipedia][bubble-wiki] 
 ###### View the algorithm in [action][bubble-toptal]
