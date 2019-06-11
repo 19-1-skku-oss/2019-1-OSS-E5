@@ -1,35 +1,24 @@
 # 2019-1-OSS-E5
 ![skku](https://ecostat.skku.edu/_res/board_new/img/board/article_no_img.png)
-## About our Team
-Last updated: 2019-06-03
+## About BTree
+Last updated: 2019-06-11
 
-## Members
-**성균관대학교 소프트웨어학과**
-- 문재완: jaewan7599
-- 김지영: pltlover
-- 임성근: nicholas369
-- 배상준: jun-honey
-
-Send email: <jaewan7599@skku.edu>
-## About Project
-All Algorithms implemented in python
-
+### All algorithms implemented in Python (for education)
 
 These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
 
+## Data Structure
 
-Original URL: <https://github.com/19-1-skku-oss/Python>
 
+### BTree
+![alt text][bubble-image]
 
-![python](https://www.python.org/static/opengraph-icon-200x200.png)
+**Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
 
-## Our Work
-**Implementation of BTree**
-- Worker: 문재완(Jaewan Moon, <jaewan7599@skku.edu>)
-- What is BTree?
+__Properties__
+* Worst case performance	O(n<sup>2</sup>)
+* Best case performance	O(n)
+* Average case performance	O(n<sup>2</sup>)
 
-- Snapshot of BTree
-
-**Implementation of Priority Queue**
-- Worker: 임성근(Sunggeun Lim, <nicholas15@skku.edu>)
-- What is Priority Queue?
+###### Source: [Wikipedia][bubble-wiki] 
+###### View the algorithm in [action][bubble-toptal]
