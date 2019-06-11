@@ -7,3 +7,5 @@
 ![HEAP 과정](https://postfiles.pstatic.net/20100429_287/hachn_12725103998110rYr7_png/heap_insert_hachn.png?type=w3)
 
 힙은 일반 이진 트리에 비해 최대 최소를 찾는 시간복잡도가 줄어든다. 대신 Insert 할때의 시간은 조건문이 늘어남에 따라 늘어난다.
+
+Source : [](https://blog.naver.com/hachn/103871306)
