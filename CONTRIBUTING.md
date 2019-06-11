@@ -11,6 +11,14 @@ We need addtional code and variaty of algorithms :
 - Add function
 - Delete unneeded file
 
+
+**Fixing Code** <br>
+If there are some erros in original files,
+- Explain the errors
+- Fix
+- Check
+
+
 **Explaning algorithms** <br>
 There are too little explanation for Beginner. So you can contribute by :
 - Explanation in py code
