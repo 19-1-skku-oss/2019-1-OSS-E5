@@ -23,7 +23,8 @@
 Source: [네이버 지식백과](https://terms.naver.com/entry.nhn?docId=2073345&cid=44414&categoryId=44414)
 
 
-# 자료구조의 종류
+# 자료구조의 종류 
+학습순서는 아래 순서대로 하는것을 권장합니다.
 
 **연결 리스트(Linked List)**
 - 단순 연결 리스트
